@@ -1,0 +1,638 @@
+﻿TeamId;TrikotNr;Name;Geburtsdatum;Minuten;Tore;Gelbe;GelbRot;Rote
+6;21;Dominik Kohr;31.01.1994;1361;1;7;1;0
+6;5;Sven Bender;27.04.1989;1968;2;0;0;0
+6;36;Niklas Uwe Bernd Lomb;28.07.1993;0;0;0;0;0
+6;28;Ramazan Özcan;28.06.1984;0;0;0;0;0
+6;15;Julian Baumgartlinger;02.01.1988;906;1;1;0;0
+6;17;Joel Pohjanpalo;13.09.1994;65;1;0;0;0
+6;31;Kevin Volland;30.07.1992;2059;10;2;0;0
+6;39;Benjamin Henrichs;23.02.1997;975;0;0;0;1
+6;4;Jonathan Glao Tah;11.02.1996;2025;0;1;0;0
+6;10;Julian Brandt;02.05.1996;1684;6;0;0;0
+6;1;Bernd Leno;04.03.1992;2340;0;1;0;0
+6;20;Charles Mariano Aránguiz Sandoval;17.04.1989;1602;1;3;0;0
+6;22;Vladlen Yurchenko;22.01.1994;0;0;0;0;0
+6;38;Karim Bellarabi;08.04.1990;997;1;2;0;0
+6;11;Stefan Kießling;25.01.1984;41;0;0;0;0
+6;16;Tin Jedvaj;28.11.1995;206;0;0;0;0
+6;18;Wendell Nascimento Borges;20.07.1993;1717;2;5;0;1
+6;8;Lars Bender;27.04.1989;1282;2;4;0;0
+6;37;Marlon Frey;24.03.1996;0;0;0;0;0
+6;30;Sam Francis Schreck;29.01.1999;0;0;0;0;0
+6;29;Kai Havertz;11.06.1999;1537;2;3;0;0
+6;33;Atakan Akkaynak;05.01.1999;0;0;0;0;0
+6;9;Leon Patrick Bailey;09.08.1997;1586;9;2;0;0
+6;40;Tomasz Kucz;06.07.1999;0;0;0;0;0
+6;3;Panagiotis Retsos;09.08.1998;1206;0;5;0;0
+6;35;Chinedu-Aaron Ekene;09.07.1999;0;0;0;0;0
+6;13;Lucas Nicolás Alario;08.10.1992;1245;7;4;0;0
+6;32;Jakub Jacek Bednarczyk;02.01.1999;0;0;0;0;0
+7;19;Mahmoud Dahoud;01.01.1996;770;0;4;0;0
+7;21;André Horst Schürrle;06.11.1990;872;1;0;0;0
+7;15;Jeremy Toljan;08.08.1994;1353;1;1;0;0
+7;20;Maximilian Philipp;01.03.1994;796;6;0;0;0
+7;8;Nuri Kazim Sahin;05.09.1988;943;2;2;0;0
+7;22;Christian Mate Pulisic;18.09.1998;1709;3;1;0;0
+7;18;Sebastian Rode;11.10.1990;0;0;0;0;0
+7;38;Roman Bürki;14.11.1990;2250;0;4;0;0
+7;29;Marcel Schmelzer;22.01.1988;1021;0;2;0;0
+7;11;Marco Reus;31.05.1989;402;3;0;0;0
+7;27;Gonzalo Castro;11.06.1987;1114;0;3;0;0
+7;33;Julian Weigl;08.09.1995;1497;1;2;0;0
+7;23;Shinji Kagawa;17.03.1989;1150;5;0;0;0
+7;1;Roman Weidenfeller;06.08.1980;90;0;0;0;0
+7;25;Sokratis Papastathopoulos;09.06.1988;1790;2;2;0;1
+7;26;Lukasz Piszczek;03.06.1985;1420;0;1;0;0
+7;37;Erik Durm;12.05.1992;0;0;0;0;0
+7;13;Raphaël Adelino José Guerreiro;22.12.1993;456;1;0;0;0
+7;36;Ömer Toprak;21.07.1989;1574;0;1;0;0
+7;10;Mario Götze;03.06.1992;1182;2;1;0;0
+7;2;Dan-Axel Zagadou;03.06.1999;654;1;0;0;1
+7;14;Aleksander Isak;21.09.1999;116;0;0;0;0
+7;35;Dominik Reimann;18.06.1997;0;0;0;0;0
+7;42;Herber Omar Mejia Flores;26.03.1996;0;0;0;0;0
+7;24;Jan-Niklas Beste;04.01.1999;0;0;0;0;0
+7;45;David Sauerland;28.06.1997;0;0;0;0;0
+7;9;Andrey Yarmolenko;23.10.1989;1014;3;0;0;0
+7;7;Jadon Malik Sancho;25.03.2000;304;0;0;0;0
+7;16;Manuel Akanji;19.07.1995;363;0;1;0;0
+7;44;Michy Batshuayi;02.10.1993;478;5;2;0;0
+7;34;Sergio Gomez Martin;04.09.2000;0;0;0;0;0
+87;26;Raúl Marcelo Bobadilla;18.06.1987;424;0;2;0;0
+87;16;Ibrahima Traoré;21.04.1988;125;0;0;0;0
+87;19;Fabian Marco Johnson;11.12.1987;457;1;0;0;0
+87;4;Jannik Vestergaard;03.08.1992;2340;3;4;0;0
+87;5;Tobias Strobl;12.05.1990;0;0;0;0;0
+87;24;Tony Jantschke;07.04.1990;536;0;2;0;0
+87;29;Mamadou Doucouré;21.05.1998;0;0;0;0;0
+87;6;Christoph Kramer;19.02.1991;1626;2;2;0;0
+87;22;László Benes;09.09.1997;27;0;0;0;0
+87;23;Jonas Hofmann;14.07.1992;553;0;0;0;0
+87;18;Josip Drmic;08.08.1992;118;0;1;0;0
+87;13;Lars Stindl;26.08.1988;2333;4;4;0;0
+87;21;Tobias Sippel;22.03.1988;433;0;0;0;0
+87;30;Nico Elvedi;30.09.1996;2214;1;6;0;0
+87;10;Thorgan Ganael Francis Hazard;29.03.1993;2287;7;1;0;0
+87;1;Yann Sommer;17.12.1988;1907;0;1;0;0
+87;7;Patrick Herrmann;12.02.1991;882;0;0;0;0
+87;11;Raffael Caetano de Araújo;28.03.1985;1459;7;0;0;0
+87;33;Christofer Heimeroth;01.08.1981;0;0;0;0;0
+87;17;Oscar Wendt;24.10.1985;1749;1;1;0;0
+87;35;Moritz Nicolas;21.10.1997;0;0;0;0;0
+87;36;Nils Rütten;20.07.1995;0;0;0;0;0
+87;31;Ba-Muaka Simakala;28.01.1997;0;0;0;0;0
+87;8;Denis Lemi Zakaria Lako Lado;20.11.1996;1982;2;9;0;0
+87;32;Vincenzo Grifo;07.04.1993;743;0;0;0;0
+87;28;Matthias Lukas Ginter;19.01.1994;2340;4;2;0;0
+87;20;Julio César Villalba Gaona;17.09.1998;6;0;1;0;0
+87;27;Mickaël Bruno Dominique Cuisance;16.08.1999;751;0;2;0;0
+87;3;Reece Joel Oxford;16.12.1998;442;0;1;0;0
+87;37;Marco Komenda;26.11.1996;0;0;0;0;0
+87;2;Mandela Chinweizu Egbo;17.08.1997;10;0;0;0;0
+87;34;Mike Feigenspan;05.08.1995;0;0;0;0;0
+87;38;Marcel Benger;02.07.1998;1;0;0;0;0
+87;41;Haralambos Makridis;05.07.1996;0;0;0;0;0
+87;42;Florian Mayer;04.03.1998;0;0;0;0;0
+87;40;Mirza Mustafic;20.06.1998;0;0;0;0;0
+87;25;Justin Hoffmanns;26.02.1997;0;0;0;0;0
+87;14;Louis Jordan Beyer;19.05.2000;0;0;0;0;0
+87;39;Aaron Philipp Herzog;30.01.1998;0;0;0;0;0
+91;34;Leon Bätge;09.07.1997;0;0;0;0;0
+91;27;Marius Wolf;27.05.1995;1773;4;4;0;0
+91;6;Jonathan de Guzman;13.09.1987;649;0;1;0;0
+91;24;Danny Vieira da Costa;13.07.1993;479;1;0;0;0
+91;19;David Ángel Abraham;16.07.1986;1718;0;3;0;0
+91;22;Timothy Chandler;29.03.1990;1701;2;3;0;0
+91;33;Taleb Tawatha;21.06.1992;388;0;1;0;0
+91;4;Ante Rebic;21.09.1993;1608;5;8;0;0
+91;31;Branimir Hrgota;12.01.1993;130;0;1;0;0
+91;39;Omar Mascarell González;02.02.1993;450;0;2;0;0
+91;7;Danny Blum;07.01.1991;27;1;0;0;0
+91;2;Yanni Regäsel;13.01.1996;0;0;0;0;0
+91;10;Marco Jhonfai Fabián De la Mora;21.07.1989;68;0;0;0;0
+91;11;Mijat Gacinovic;08.02.1995;1555;1;4;0;0
+91;1;Lukáš Hrádecký;24.11.1989;2340;0;1;0;0
+91;23;Marco Russ;04.08.1985;727;1;3;0;0
+91;20;Makoto Hasebe;18.01.1984;1650;0;2;0;0
+91;21;Marc Stendera;10.12.1995;375;0;1;0;0
+91;14;Alexander Meier;17.01.1983;0;0;0;0;0
+91;5;Gélson da Conceição Tavares Fernandes;02.09.1986;801;0;4;0;0
+91;8;Luka Jovic;23.12.1997;477;5;2;0;0
+91;13;Carlos Joel Salcedo Hernández;29.09.1993;1427;0;3;0;0
+91;35;Noel Knothe;05.05.1999;0;0;0;0;0
+91;15;Jetro Danovich Sexer Willems;30.03.1994;1134;0;3;0;0
+91;38;Renat Dadashov;17.05.1999;0;0;0;0;0
+91;37;Jan Zimmermann;19.04.1985;0;0;0;0;0
+91;9;Sébastien Haller;22.06.1994;2023;8;2;0;0
+91;40;Daichi Kamada;05.08.1996;145;0;0;0;0
+91;28;Aymane Barkok;21.05.1998;250;0;1;0;0
+91;;Juan Miguel Blanco-Lopez;26.04.1999;0;0;0;0;0
+91;26;Deji-Ousman Beyreuther;06.09.1999;0;0;0;0;0
+91;3;Simon Falette;19.02.1992;1902;1;9;0;1
+91;30;Sahverdi Cetin;28.09.2000;0;0;0;0;0
+91;32;Nelson Mandela Nelson Mandela;04.05.1999;0;0;0;0;0
+91;36;Marius Herzig;17.12.1999;0;0;0;0;0
+91;17;Kevin-Prince Boateng;06.03.1987;1892;5;5;0;0
+91;41;Tobias Stirl;17.04.2000;0;0;0;0;0
+91;42;Marijan Cavar;02.02.1998;0;0;0;0;0
+95;23;Marco Richter;24.11.1997;109;1;0;0;0
+95;12;Zdenko Miletic;23.04.1968;0;0;0;0;0
+95;1;Andreas Luthe;10.03.1987;0;0;0;0;0
+95;34;Maximilian Reinthaler;22.03.1995;0;0;0;0;0
+95;30;Caiuby Francisco da Silva;14.07.1988;2139;5;5;0;0
+95;27;Alfreð Finnbogason;01.02.1989;1479;11;0;0;0
+95;6;Jeffrey Gouweleeuw;10.07.1991;1755;0;3;0;0
+95;14;Jan Morávek;01.11.1989;335;0;3;0;0
+95;24;Ioannis Gelios;24.04.1992;0;0;0;0;0
+95;19;Ja-Cheol Koo;27.02.1989;1628;2;1;0;0
+95;4;Daniel Tawiah Opare;18.10.1990;1418;0;6;0;0
+95;31;Philipp Max;30.09.1993;2330;1;2;0;0
+95;16;Christoph Janker;14.02.1985;17;0;0;0;0
+95;35;Marwin Hitz;18.09.1987;2340;0;2;0;0
+95;32;Raphael Framberger;06.09.1995;697;0;3;0;0
+95;10;Daniel Baier;18.05.1984;2156;0;5;0;0
+95;9;Shawn Parker;07.03.1993;44;0;1;0;0
+95;20;Gojko Kacar;26.01.1987;182;1;0;0;0
+95;36;Martin Hinteregger;07.09.1992;1935;0;2;0;0
+95;38;Kevin Danso;19.09.1998;1017;2;2;0;0
+95;21;Sergio Duvan Córdova Lezama;09.08.1997;312;1;1;0;0
+95;40;Markus Feulner;12.02.1982;0;0;0;0;0
+95;8;Rani Khedira;27.01.1994;1595;0;7;0;0
+95;7;Marcel Heller;12.02.1986;1269;0;1;0;0
+95;17;Jonathan Schmid;22.06.1990;749;0;1;0;0
+95;13;Fabian Giefer;17.05.1990;0;0;0;0;0
+95;11;Michael Gregoritsch;18.04.1994;1971;11;1;0;0
+95;25;Kilian Jakob;25.01.1998;51;0;0;0;0
+95;26;Simon Asta;25.01.2001;0;0;0;0;0
+95;15;Efkan Bekiroglu;14.09.1995;0;0;0;0;0
+40;24;Corentin Tolisso;03.08.1994;1196;3;3;0;0
+40;36;Christian Früchtl;28.01.2000;0;0;0;0;0
+40;11;James David Rodríguez Rubio;12.07.1991;1127;4;2;0;0
+40;2;Sandro Wagner;29.11.1987;1152;7;4;0;0
+40;4;Niklas Süle;03.09.1995;1355;1;0;0;0
+40;19;Sebastian Rudy;28.02.1990;928;0;1;0;0
+40;6;Thiago Alcantara Nascimiento;11.04.1991;869;1;3;0;0
+40;5;Mats Julian Hummels;16.12.1988;1673;1;1;0;0
+40;13;Márcio Rafael Ferreira de Souza;07.09.1985;1320;0;4;0;0
+40;29;Kingsley Junior Coman;13.06.1996;1149;3;0;0;0
+40;17;Jérôme Agyenim Boateng;03.09.1988;1374;1;3;0;0
+40;25;Thomas Müller;13.09.1989;1546;6;4;0;0
+40;26;Sven Ulreich;03.08.1988;1890;0;1;0;0
+40;23;Arturo Erasmo Vidal Pardo;22.05.1987;1368;6;6;0;0
+40;32;Joshua Kimmich;08.02.1995;1804;1;1;0;0
+40;14;Juan Bernat Velasco;01.03.1993;479;0;0;0;0
+40;22;Tom Starke;18.03.1981;180;0;0;0;0
+40;27;David Olatukunbo Alaba;24.06.1992;1342;1;1;0;0
+40;9;Robert Lewandowski;21.08.1988;1851;23;0;0;0
+40;7;Franck Ribéry;07.04.1983;1034;4;1;0;0
+40;8;Javier Martínez Aguinaga;02.09.1988;1343;1;1;0;0
+40;1;Manuel Peter Neuer;27.03.1986;270;0;0;0;0
+40;10;Arjen Robben;23.01.1984;1299;4;0;0;0
+40;39;Nicolas Feldhahn;14.08.1986;0;0;0;0;0
+40;20;Felix Götze;11.02.1998;0;0;0;0;0
+40;30;Niklas Dorsch;15.01.1998;0;0;0;0;0
+40;40;Fabian Benko;05.06.1998;0;0;0;0;0
+40;41;Miloš Pantovic;07.07.1996;0;0;0;0;0
+40;33;Timothy Tillman;04.01.1999;0;0;0;0;0
+40;42;Ron Thorben Hoffmann;04.04.1999;0;0;0;0;0
+40;37;Leo Weinkauf;07.07.1996;0;0;0;0;0
+40;38;Manuel Wintzheimer;10.01.1999;0;0;0;0;0
+40;15;Lars Lukas Mai;31.03.2000;0;0;0;0;0
+40;35;Maxime Aglago Awoudja;02.02.1998;0;0;0;0;0
+40;28;Kwasi Okyere Wriedt;10.07.1994;22;0;0;0;0
+40;16;Meritan Shabani;15.03.1999;0;0;0;0;0
+9;26;Lennart-Marten Quint Czyborra;03.05.1999;0;0;0;0;0
+9;36;Breel Donald Embolo;14.02.1997;710;2;4;0;0
+9;18;Daniel Caligiuri;15.01.1988;2198;4;4;0;0
+9;29;Ronaldo Aparecido Rodrigues;10.09.1982;2340;5;4;0;0
+9;9;Franco Matías Di Santo;07.04.1989;1391;3;3;0;0
+9;39;Joshua Bitter;01.01.1997;0;0;0;0;0
+9;2;Weston James Earl McKennie;28.08.1998;837;0;3;0;0
+9;28;Alessandro Andre Schöpf;07.02.1994;499;0;2;0;0
+9;35;Alexander Nübel;30.09.1996;0;0;0;0;0
+9;5;Matija Nastasic;28.03.1993;1736;0;4;1;0
+9;21;Sascha Riether;23.03.1983;0;0;0;0;0
+9;20;Thilo Kehrer;21.09.1996;1824;1;3;0;0
+9;7;Maximilian Meyer;18.09.1995;1596;0;6;0;0
+9;8;Leon Goretzka;06.02.1995;1282;4;2;0;0
+9;1;Ralf Fährmann;27.09.1988;2340;0;1;0;0
+9;3;Pablo Insua Blanco;09.09.1993;0;0;0;0;0
+9;24;Bastian Oczipka;12.01.1989;2012;0;2;0;0
+9;19;Guido Burgstaller;29.04.1989;1673;8;5;0;0
+9;23;Cedric Teuchert;14.01.1997;0;0;0;0;0
+9;32;Bernard Tekpetey;03.09.1997;0;0;0;0;0
+9;14;Abdul Rahman Baba;02.07.1994;0;0;0;0;0
+9;17;Benjamin Fernand Lucien Francois Stambouli;13.08.1990;1500;0;3;0;0
+9;10;Nabil Bentaleb;24.11.1994;686;4;2;0;0
+9;11;Yevhen Konoplyanka;29.09.1989;1199;2;1;0;0
+9;25;Amine Harit;18.06.1997;1596;3;3;0;0
+9;34;Michael Langer;06.01.1985;0;0;0;0;0
+9;13;Denis Hubert Wieszolek;26.02.1996;0;0;0;0;0
+9;37;Felix Schröter;23.01.1996;0;0;0;0;0
+9;27;Jannis Kübler;25.05.1999;0;0;0;0;0
+9;31;Nicholas Matthew Taitague;17.02.1999;0;0;0;0;0
+9;30;Patryk Kamil Dragon;11.04.1996;0;0;0;0;0
+9;22;Marko Pjaca;06.05.1995;243;2;0;0;0
+100;11;André Hahn;13.08.1990;1336;3;0;0;0
+100;5;Mergim Mustafe Mavraj;09.06.1986;1447;0;2;1;0
+100;17;Filip Kostic;01.11.1992;1761;4;2;0;0
+100;32;Frank Ronstadt;21.07.1997;0;0;0;0;0
+100;15;Gian-Luca Waldschmidt;19.05.1996;429;0;0;0;0
+100;7;Bobby Shou Wood;15.11.1992;1313;1;1;0;0
+100;1;Christian Mathenia;31.03.1992;2160;0;2;0;0
+100;37;Young-Jae Seo;23.05.1995;0;0;0;0;0
+100;30;Andreas Hirzel;25.03.1993;0;0;0;0;0
+100;36;Tom Mickel;19.04.1989;0;0;0;0;0
+100;14;Aaron Hunt;04.09.1986;1468;1;1;0;0
+100;20;Albin Ekdal;28.07.1989;939;0;2;0;0
+100;19;Sven Schipplock;08.11.1988;335;0;0;0;0
+100;24;Gotoku Sakai;14.03.1991;1580;0;2;0;0
+100;28;Gideon Jung;12.09.1994;1941;1;4;0;1
+100;8;Lewis Harry Holtby;18.09.1990;503;1;1;0;0
+100;27;Nicolai Müller;25.09.1987;15;1;0;0;0
+100;2;Dennis Diekmeier;20.10.1989;1779;0;4;0;0
+100;9;Kyriakos Papadopoulos;23.02.1992;2160;1;9;1;0
+100;18;Bakery Jatta;06.06.1998;244;0;1;0;0
+100;25;Mats Köhlert;02.05.1998;0;0;0;0;0
+100;6;Douglas dos Santos Justino De Melo;22.03.1994;1748;0;4;0;0
+100;31;Mohamed Gouaida;15.05.1993;0;0;0;0;0
+100;13;Julian Pollersbeck;16.08.1994;180;0;0;0;0
+100;34;Arianit Ferati;07.09.1997;0;0;0;0;0
+100;22;Bjarne Thoelke;11.04.1992;0;0;0;0;0
+100;16;Vasilije Janjicic;02.11.1998;319;0;1;0;0
+100;12;Walace Souza Silva;04.04.1995;1321;1;3;0;0
+100;4;Rick van Drongelen;20.12.1998;1142;0;3;0;0
+100;38;Jonas Behounek;17.05.1998;0;0;0;0;0
+100;35;Christian Stark;18.02.1998;0;0;0;0;0
+100;40;Jann-Fiete Arp;06.01.2000;731;2;1;0;0
+100;39;Marco Drawz;31.03.1999;0;0;0;0;0
+100;42;Tobias-Mbunjiro Knost;08.05.2000;0;0;0;0;0
+100;26;Törles Knöll;13.09.1997;17;0;0;0;0
+100;23;Sejad Salihovic;08.10.1984;352;1;1;0;0
+100;43;Tatsuya Ito;26.06.1997;424;0;1;0;0
+100;41;Aaron Opoku;28.03.1999;0;0;0;0;0
+100;45;Mortiz-Broni Kwarteng;28.04.1998;0;0;0;0;0
+100;44;Patric Pfeiffer;20.08.1999;0;0;0;0;0
+100;46;Stephan Kofi Ambrosius;18.12.1998;0;0;0;0;0
+100;47;Joshua Mamadou Karaboue Vagnoman;11.12.2000;20;0;0;0;0
+55;3;Miiko Martín Albornoz Inola;30.11.1990;235;0;1;0;0
+55;20;Salif Sané;25.08.1990;2160;2;5;0;0
+55;26;Kenan Karaman;05.03.1994;644;0;2;0;0
+55;6;Marvin Bakalorz;13.09.1989;1463;0;3;0;0
+55;10;Sebastian Maier;18.09.1993;183;0;0;0;0
+55;19;Florian Hübner;01.03.1991;325;0;2;0;0
+55;1;Philipp Tschauner;03.11.1985;2160;0;1;0;0
+55;25;Oliver Sorg;29.05.1990;1162;0;2;0;0
+55;33;Fynn Arkenberg;04.03.1996;0;0;0;0;0
+55;37;Noah Joel Sarenren Bazee;21.08.1996;52;0;1;0;0
+55;18;Iver Tobias Rorvik Fossum;15.07.1996;1009;1;0;0;0
+55;31;Waldemar Anton;20.07.1996;2160;1;1;0;0
+55;11;Felix Klaus;13.09.1992;1655;3;4;0;0
+55;35;Charlison Benschop;21.08.1989;181;1;0;0;0
+55;8;Manuel Schmiedebach;05.12.1988;163;0;1;0;0
+55;5;Felipe Trevizan Martins;15.05.1987;458;0;0;0;0
+55;7;Edgar Prib;15.12.1989;0;0;0;0;0
+55;14;Martin Harnik;10.06.1987;1373;6;2;0;0
+55;15;Timo Hübers;20.07.1996;0;0;0;0;0
+55;23;Michael Esser;22.11.1987;180;0;0;0;0
+55;4;Julian Korb;21.03.1992;1976;1;7;0;0
+55;27;Pirmin Schwegler;09.03.1987;1795;0;7;0;0
+55;22;Matthias Ostrzolek;05.06.1990;2110;0;4;0;0
+55;13;Ihlas Bebou;23.04.1994;1657;5;3;0;0
+55;24;Niclas Füllkrug;09.02.1993;1749;10;1;0;0
+55;29;Mete Kaan Demir;13.05.1998;0;0;0;0;0
+55;21;Lars Ritzka;07.05.1998;0;0;0;0;0
+55;38;Tom Baller;02.08.1998;0;0;0;0;0
+55;16;Yousef Emghanes;19.01.1998;0;0;0;0;0
+55;40;Linton Maina;23.06.1999;0;0;0;0;0
+55;9;Jonathas Cristian de Jesus;06.03.1989;481;3;2;0;0
+55;2;Josip Elez;25.04.1994;416;0;1;0;0
+55;30;Marlon Sündermann;16.05.1998;0;0;0;0;0
+54;7;Alexander Esswein;25.03.1990;599;1;0;0;0
+54;5;Niklas Stark;14.04.1995;1760;1;2;0;0
+54;23;Mitchell-Elijah Weiser;21.04.1994;1666;1;2;0;0
+54;18;Sinan Kurt;23.07.1996;0;0;0;0;0
+54;36;Nico Beyer;22.09.1996;0;0;0;0;0
+54;19;Vedad Ibiševic;06.08.1984;1101;4;4;0;1
+54;6;Vladimír Darida;08.08.1990;927;0;2;0;0
+54;8;Salomon Armand Magloire Kalou;05.08.1985;1707;9;0;0;0
+54;3;Per Ciljan Skjelbred;16.06.1987;1817;0;2;0;0
+54;16;Julian Schieber;13.02.1989;0;0;0;0;0
+54;21;Marvin Plattenhardt;26.01.1992;2340;0;4;0;0
+54;1;Thomas Kraft;22.07.1988;270;0;0;0;0
+54;22;Rune Almenning Jarstein;29.09.1984;2070;0;1;0;0
+54;2;Peter Pekarík;30.10.1986;1079;0;1;0;0
+54;28;Fabian Lustenberger;02.05.1988;1152;0;1;0;0
+54;17;Maximilian Mittelstädt;18.03.1997;253;0;0;0;0
+54;10;Ondrej Duda;05.12.1994;603;1;2;0;0
+54;4;Karim Rekik;02.12.1994;1585;2;3;0;0
+54;33;Jonathan Klinsmann;08.04.1997;0;0;0;0;0
+54;27;Davie Selke;20.01.1995;1312;5;1;0;0
+54;11;Mathew Allan Leckie;04.02.1991;1364;4;3;0;0
+54;30;Julius Kade;20.05.1999;0;0;0;0;0
+54;29;Florian Baak;18.03.1999;0;0;0;0;0
+54;25;Jordan Torunarigha;07.08.1997;482;1;0;0;1
+54;26;Arne Maier;08.01.1999;984;0;1;0;0
+54;20;Valentino Lazaro;24.03.1996;1331;1;3;0;0
+54;32;Palko Dardai;24.04.1999;0;0;0;0;0
+54;35;Sidney Friede;12.04.1998;0;0;0;0;0
+54;34;Maurice Covic;17.04.1998;0;0;0;0;0
+54;31;Dennis Smarsch;14.01.1999;0;0;0;0;0
+1635;20;Benno Schmitz;17.11.1994;81;0;0;0;0
+1635;11;Timo Werner;06.03.1996;1822;10;1;0;0
+1635;32;Péter Gulácsi;06.05.1990;2250;0;0;0;0
+1635;23;Marcel Halstenberg;27.09.1991;1177;2;3;0;0
+1635;1;Fabio Coltorti;03.12.1980;0;0;0;0;0
+1635;24;Dominik Kaiser;16.09.1988;138;0;0;0;0
+1635;31;Diego Demme;21.11.1991;1656;0;3;0;0
+1635;9;Yussuf Yurary Poulsen;15.06.1994;1305;3;0;0;0
+1635;13;Stefan Ilsanker;18.05.1989;942;0;2;1;0
+1635;7;Marcel Sabitzer;17.03.1994;1661;2;3;0;0
+1635;10;Emil Forsberg;23.10.1991;1043;1;0;0;0
+1635;4;Willi Thomas Orban;03.11.1992;1705;2;3;0;1
+1635;16;Lukas Klostermann;03.06.1996;1742;1;2;0;0
+1635;8;Naby Deco Keïta;10.02.1995;1507;4;5;0;1
+1635;28;Yvon Landry Mvogo Nganoma;06.06.1994;90;0;0;0;0
+1635;27;Konrad Laimer;27.05.1997;1040;0;2;0;0
+1635;22;Philipp Köhn;02.04.1998;0;0;0;0;0
+1635;17;Armindo Tué Na Bangna;24.10.1994;1327;3;0;0;0
+1635;29;Jean-Kévin Augustin;16.06.1997;968;6;1;0;0
+1635;44;Kevin Kampl;09.10.1990;1524;1;2;0;0
+1635;3;Bernardo Fernandes da Silva Junior;14.05.1995;922;1;2;0;0
+1635;40;Elias Abouchabaka;31.03.2000;0;0;0;0;0
+1635;5;Dayotchanculle Oswald Upamecano;27.10.1998;1777;1;1;1;0
+1635;6;Ibrahima Konaté;25.05.1999;686;0;1;0;0
+1635;36;Marc Dauter;22.03.1999;0;0;0;0;0
+1635;39;Dominic Minz;07.03.1999;0;0;0;0;0
+1635;35;Kilian Senkbeil;22.05.1999;0;0;0;0;0
+1635;37;Mert Yilmaz;08.03.1999;0;0;0;0;0
+1635;25;Toni Stahl;17.09.1999;0;0;0;0;0
+1635;34;Julian Krahl;22.01.2000;0;0;0;0;0
+1635;38;Lukas Schelenz;15.05.1999;0;0;0;0;0
+1635;18;Ademola Lookman Olajade Alade Aylola Lookman;20.10.1997;203;1;0;0;0
+1635;26;Niclas Stierlin;22.01.2000;0;0;0;0;0
+1635;33;Fabrice Hartmann;02.03.2001;0;0;0;0;0
+112;32;Bartosz Kapustka;23.12.1996;224;1;0;0;0
+112;44;Rafal Gikiewicz;26.10.1987;153;0;0;0;0
+112;3;Philipp Lienhart;11.07.1996;867;0;2;0;0
+112;9;Lucas Höler;10.07.1994;692;0;0;0;0
+112;34;Tim Kleindienst;31.08.1995;694;0;2;0;0
+112;26;Gaëtan Bussmann;02.02.1991;0;0;0;0;0
+112;13;Marco Terrazzino;15.04.1991;1155;0;1;0;0
+112;4;Çaglar Söyüncü;23.05.1996;1722;1;4;0;1
+112;2;Aleksandar Ignjovski;27.01.1991;0;0;0;0;0
+112;5;Manuel Gulde;12.02.1991;810;1;0;0;0
+112;28;Jonas Meffert;04.09.1994;0;0;0;0;0
+112;19;Janik Haberer;02.04.1994;2155;3;7;0;0
+112;15;Pascal Stenzel;20.03.1996;1637;1;3;0;0
+112;7;Florian Niederlechner;24.10.1990;700;2;1;0;0
+112;1;Alexander Schwolow;02.06.1992;2187;0;0;0;0
+112;21;Patric Klandt;29.09.1983;0;0;0;0;0
+112;17;Lukas Kübler;30.08.1992;704;0;1;0;0
+112;6;Amir Abrashi;27.03.1990;851;0;2;0;0
+112;18;Nils Petersen;06.12.1988;1580;12;2;0;0
+112;31;Karim Guédé;07.01.1985;60;0;0;0;0
+112;20;Marc-Oliver Kempf;28.01.1995;586;0;0;0;0
+112;8;Mike Frantz;14.10.1986;834;0;0;0;0
+112;33;Caleb James Stanko;26.07.1993;188;0;0;0;0
+112;30;Christian Günter;28.02.1993;2340;1;2;0;0
+112;23;Julian Schuster;15.04.1985;1088;0;1;0;0
+112;27;Nicolas Höfler;09.03.1990;1539;0;5;1;0
+112;24;Georg Niedermeier;26.02.1986;0;0;0;0;0
+112;22;Vincent Olivier Sierro;08.10.1995;44;0;0;0;0
+112;38;Florian Kath;21.10.1994;425;1;3;0;0
+112;40;Mohamed Dräger;25.06.1996;51;0;0;0;0
+112;50;Niklas Hoffmann;09.04.1997;0;0;0;0;0
+112;14;Patrick Kammerbauer;11.02.1997;0;0;0;0;0
+112;25;Robin Koch;17.07.1996;1535;2;2;0;0
+112;35;Felix Roth;13.11.1987;0;0;0;0;0
+112;57;Rico Wehrle;04.09.1993;0;0;0;0;0
+112;56;Nico Rodewald;16.03.1998;0;0;0;0;0
+112;49;Jonas Huchler;01.04.1998;0;0;0;0;0
+112;51;Marcel Schmitt;18.01.1998;0;0;0;0;0
+112;54;Marvin Geng;08.09.1997;0;0;0;0;0
+112;59;Kolja Herrmann;17.04.1997;0;0;0;0;0
+112;36;Tim Probst;31.01.1998;0;0;0;0;0
+112;45;Pedro Manolo Rodas Steeg;04.07.1996;0;0;0;0;0
+112;58;Fabian Rüdlin;13.01.1997;0;0;0;0;0
+112;37;Constantin Frommann;27.05.1998;0;0;0;0;0
+112;48;Luca Valentin Herrmann;22.02.1999;0;0;0;0;0
+112;41;Nico Hug;26.10.1998;0;0;0;0;0
+112;29;Matej Jukic;07.04.1997;0;0;0;0;0
+112;52;Chima Sean Okoroji;19.04.1997;0;0;0;0;0
+112;55;Angelo Rinaldi;14.01.1998;0;0;0;0;0
+112;53;Keven Schlotterbeck;28.04.1997;0;0;0;0;0
+112;46;Lucas Torres Farias;10.02.1998;0;0;0;0;0
+112;43;Kamran Yahyaijan;14.11.1998;0;0;0;0;0
+112;16;Yoric Ravet;12.09.1989;495;0;0;0;1
+134;15;Sebastian Langkamp;15.01.1988;963;0;2;0;0
+134;8;Jérôme Gondorf;26.06.1988;528;1;2;0;0
+134;10;Max Kruse;19.03.1988;1735;5;1;0;0
+134;1;Jiri Pavlenka;14.04.1992;2340;0;0;0;0
+134;5;Hans Carl Ludwig Augustinsson;21.04.1994;2240;1;3;0;0
+134;13;Miloš Veljkovic;26.09.1995;2115;1;2;0;0
+134;9;Aron Jóhannsson;10.11.1990;236;1;0;0;0
+134;33;Jaroslav Drobný;18.10.1979;0;0;0;0;0
+134;3;Luca Caldirola;01.02.1991;90;0;0;0;0
+134;17;Justin Eilers;13.06.1988;0;0;0;0;0
+134;35;Maximilian Eggestein;08.12.1996;1986;2;3;0;0
+134;30;Michael Zetterer;12.07.1995;0;0;1;0;0
+134;22;Fin Bartels;07.02.1987;1128;2;0;0;0
+134;23;Theodor Gebre Selassie;24.12.1986;2109;2;3;0;0
+134;16;Zlatko Junuzovic;26.09.1987;1192;1;0;0;0
+134;44;Philipp Bargfrede;03.03.1989;1254;1;4;0;0
+134;18;Niklas Moisander;29.09.1985;1890;1;4;0;0
+134;7;Florian Kainz;24.10.1992;1362;2;4;0;0
+134;19;Yuning Zhang;05.01.1997;0;0;0;0;0
+134;4;Robert Bauer;09.04.1995;954;0;4;0;0
+134;39;Boubacar Barry;15.04.1996;0;0;0;0;0
+134;24;Johannes Eggestein;08.05.1998;46;0;0;0;0
+134;32;Marco Friedl;16.03.1998;121;0;0;0;0
+134;6;Thomas Joseph Delaney;03.09.1991;2193;2;4;0;0
+134;28;Jesper Verlaat;04.06.1996;0;0;0;0;0
+134;40;Luca Plogmann;10.03.2000;0;0;0;0;0
+134;29;Ishak Belfodil;12.01.1992;993;1;1;0;0
+134;36;Thore-Andreas Jacobsen;19.04.1997;0;0;0;0;0
+134;14;Ole Käuper;09.01.1997;74;0;1;0;0
+134;37;Jonah Osabutey;08.10.1998;0;0;0;0;0
+134;34;Julian Rieckmann;01.08.2000;0;0;0;0;0
+134;27;Idrissa Touré;29.04.1998;0;0;0;0;0
+134;31;Dominic Volkmer;27.04.1996;0;0;0;0;0
+134;21;Jannes Vollert;21.01.1998;0;0;0;0;0
+134;25;Isaiah Ahmad Young;30.03.1998;0;0;0;0;0
+134;11;Milot Rashica;28.06.1996;139;1;0;0;0
+123;20;Robert Žulj;05.02.1992;114;0;0;0;0
+123;16;Nico Schulz;01.04.1993;1053;1;2;0;0
+123;4;Ermin Bicakcic;24.01.1990;437;0;4;0;0
+123;8;Eugen Polanski;17.03.1986;193;0;1;0;0
+123;21;Benjamin Hübner;04.07.1989;1943;2;7;0;0
+123;7;Lukas Rupp;08.01.1991;965;1;1;0;0
+123;22;Kevin Vogt;23.09.1991;2160;0;8;0;0
+123;27;Andrej Kramaric;19.06.1991;1570;8;1;0;0
+123;28;Ádám Csaba Szalai;09.12.1987;618;3;2;0;0
+123;1;Oliver Baumann;02.06.1990;2340;0;0;0;0
+123;3;Pavel Kaderábek;25.04.1992;1567;0;4;0;0
+123;18;Nadiem Amiri;27.10.1996;1254;2;2;0;0
+123;19;Mark-Alexander Uth;24.08.1991;1630;10;4;0;0
+123;17;Steven Zuber;17.08.1991;1214;0;2;0;0
+123;33;Alexander Stolz;13.10.1983;0;0;0;0;0
+123;36;Gregor Kobel;06.12.1997;0;0;0;0;0
+123;32;Dennis Geiger;10.06.1998;1593;2;9;0;0
+123;35;Meris Skenderovic;28.03.1998;0;0;0;0;0
+123;31;Felix Passlack;29.05.1998;73;0;0;0;0
+123;10;Kerem Demirbay;03.07.1993;1059;2;3;0;0
+123;11;Florian Grillitsch;07.08.1995;1319;0;4;0;0
+123;25;Kevin John Ufuoma Akpoguma;19.04.1995;1028;0;0;0;0
+123;29;Serge David Gnabry;14.07.1995;1139;5;0;0;0
+123;6;Håvard Nordtveit;21.06.1990;562;0;0;0;0
+123;38;Stefan Posch;14.05.1997;757;0;3;0;0
+123;24;Justin Hoogma;11.06.1998;0;0;0;0;0
+123;37;Robin Hack;27.08.1998;42;1;0;0;0
+123;39;Dominik Draband;07.03.1996;0;0;0;0;0
+123;40;Joao Klauss De Mello;01.03.1997;0;0;0;0;0
+123;41;Johannes Bühler;26.07.1997;0;0;0;0;0
+123;42;Alexander Rossipal;06.06.1996;0;0;0;0;0
+123;43;Maximilian Waack;12.01.1996;0;0;0;0;0
+123;44;Nicolas Wähling;24.08.1997;0;0;0;0;0
+123;26;David Otto;03.03.1999;0;0;0;0;0
+16;17;Erik Thommy;20.08.1994;612;1;1;0;0
+16;16;Ron-Robert Zieler;12.02.1989;2340;0;2;0;0
+16;3;Dennis Aogo;14.01.1987;1347;0;2;0;0
+16;24;Dženis Burnic;22.05.1998;304;0;2;1;0
+16;13;Jens Grahl;22.09.1988;0;0;0;0;0
+16;35;Marcin Kaminski;15.01.1992;991;0;0;0;0
+16;25;Matthias Jürgen Zimmermann;16.06.1992;74;0;0;0;0
+16;2;Emiliano Adrián Insúa Zapata;07.01.1989;1386;0;2;0;0
+16;5;Timo Baumgartl;04.03.1996;2160;0;3;0;0
+16;33;Daniel Ginczek;13.04.1991;916;4;1;0;0
+16;20;Christian Gentner;14.08.1985;1693;0;2;0;0
+16;14;Anastasios Donis;29.08.1996;806;1;1;0;0
+16;23;Orel Mangala;18.03.1998;617;0;2;0;0
+16;19;Chadrac Akolo Ababa;01.04.1995;953;4;2;0;0
+16;28;Holger Badstuber;13.03.1989;1493;2;2;0;0
+16;34;Jacob Bruun Larsen;19.09.1998;51;0;0;0;0
+16;31;Berkay Özcan;15.02.1998;890;0;1;0;0
+16;27;Mario Gómez García;10.07.1985;1708;5;2;0;0
+16;11;Takuma Asano;10.11.1994;720;1;1;0;0
+16;21;Benjamin Pavard;28.03.1996;2340;1;2;0;0
+16;15;Carlos Manuel Cardoso Mané;11.03.1994;0;0;0;0;0
+16;38;Stefan Peric;13.02.1997;0;0;0;0;0
+16;30;Dijon Ramaj;29.06.1998;0;0;0;0;0
+16;36;Caniggia Ginola Elva;14.07.1996;0;0;0;0;0
+16;40;Alexander Groiß;01.07.1998;0;0;0;0;0
+16;39;Nicolas Sessa;23.03.1996;0;0;0;0;0
+16;6;Santiagio Lionel Ascacíbar;25.02.1997;1873;0;9;0;0
+16;26;Alexander Meyer;13.04.1991;0;0;0;0;0
+16;32;Andreas Beck;13.03.1987;1705;1;4;0;0
+16;37;Florian Kastenmeier;28.06.1997;0;0;0;0;0
+131;3;Paul Johannes Gerardus Verhaegh;01.09.1983;2107;2;3;0;0
+131;25;John Anthony Brooks;28.01.1993;610;0;0;0;0
+131;21;Josip Brekalo;23.06.1998;1102;2;2;0;0
+131;10;Yunus Malli;24.02.1992;1861;5;3;0;0
+131;44;Robin Ziegele;13.03.1997;0;0;0;0;0
+131;5;Jeffrey Kevin van Homoet Bruma;13.11.1991;720;0;2;0;0
+131;13;Yannick Gerhardt;13.03.1994;1151;1;1;0;0
+131;23;Josuha Guilavogui;19.09.1990;1957;2;6;0;0
+131;11;Daniel Didavi;21.02.1990;1776;6;3;0;0
+131;45;Marian Sarr;30.01.1995;0;0;0;0;0
+131;38;Anton Donkor;11.11.1997;0;0;0;0;0
+131;;Carlos Antonio Ascues Ávila;19.06.1992;0;0;0;0;0
+131;1;Koen Casteels;25.06.1992;2340;0;1;0;0
+131;31;Robin Knoche;22.05.1992;1428;0;1;0;0
+131;4;Ignacio Camacho Barnola;04.05.1990;773;0;1;0;0
+131;27;Maximilian Arnold;27.05.1994;1734;2;6;0;1
+131;24;Sebastian Jung;22.06.1990;79;0;1;0;0
+131;20;Max Grün;05.04.1987;0;0;0;0;0
+131;46;Moritz Sprenger;22.02.1995;0;0;0;0;0
+131;16;Jakub Blaszczykowski;14.12.1985;427;1;0;0;0
+131;22;Admir Mehmedi;16.03.1991;988;3;3;0;0
+131;17;Ohis Felix Uduokhai;09.09.1997;1292;1;1;0;0
+131;36;Phillip Menzel;18.08.1998;0;0;0;0;0
+131;29;Marcel Tisserand;10.01.1993;1175;0;4;0;0
+131;26;Justin Möbius;21.04.1997;0;0;0;0;0
+131;28;Dominik Franke;05.10.1998;0;0;0;0;0
+131;6;Riechedly Bazoer;12.10.1996;301;0;2;0;0
+131;18;Victor Osimhen;29.12.1998;214;0;0;0;0
+131;35;Gian-Luca Itter;05.01.1999;414;0;1;0;0
+131;2;William de Asevedo Furtado;03.04.1995;898;0;3;1;0
+131;9;Landry Nany Dimata;01.09.1997;453;0;0;1;0
+131;37;Elvis Rexhbecaj;01.11.1997;96;0;0;0;0
+131;39;Paul Jaeckel;22.07.1998;0;0;0;0;0
+131;42;Niklas Klinger;13.10.1995;0;0;0;0;0
+131;40;Julian Justvan;02.04.1998;0;0;0;0;0
+131;43;Murat Saglam;10.04.1998;0;0;0;0;0
+131;41;Kentu Malcolm Badu;23.06.1997;0;0;0;0;0
+131;47;Timothy Jezreel Mason;26.09.1998;0;0;0;0;0
+131;48;Orhan Vojic;20.01.1997;0;0;0;0;0
+131;14;Divock Okoth Origi;18.04.1995;1628;5;2;0;0
+131;8;Renato Steffen;03.11.1991;354;0;2;0;0
+65;15;Jhon Andrés Córdoba Copete;11.05.1993;780;0;1;0;0
+65;17;Christian Clemens;04.08.1991;346;1;0;0;0
+65;23;Jannes-Kilian Horn;06.02.1997;723;0;0;0;0
+65;5;Dominic Maroh;04.03.1987;495;0;0;0;0
+65;21;Leonardo Jesus Loureiro Bittencourt;19.12.1993;1051;1;3;0;0
+65;6;Marco Höger;16.09.1989;988;0;2;0;0
+65;24;Lukas Klünter;26.05.1996;1258;1;5;0;0
+65;4;Frederik Hillesborg Sørensen;14.04.1992;1859;2;9;0;0
+65;3;Dominique Heintz;15.08.1993;2070;1;2;0;0
+65;8;Miloš Jojic;19.03.1992;1389;2;3;0;0
+65;11;Simon Zoller;26.06.1991;704;1;2;0;0
+65;33;Matthias Lehmann;28.05.1983;1519;0;3;0;0
+65;13;Yuya Osako;18.05.1990;1503;3;1;1;0
+65;1;Timo Horn;12.05.1993;2340;0;0;0;0
+65;14;Jonas Hector;27.05.1990;1062;0;3;0;0
+65;16;Pawel Olkowski;13.02.1990;450;0;1;0;0
+65;7;Marcel Risse;17.12.1989;605;0;1;0;0
+65;18;Thomas Kessler;20.01.1986;0;0;0;0;0
+65;20;Salih Özcan;11.01.1998;1561;0;4;0;0
+65;19;Sehrou Guirassy;12.03.1996;846;4;2;0;0
+65;35;Sven Tobias Müller;16.02.1996;0;0;0;0;0
+65;22;Jorge Meré Pérez;17.04.1997;1260;1;3;0;0
+65;9;Simon Terodde;02.03.1988;1689;7;4;0;0
+65;29;Tim-Henry Handwerker;19.05.1998;251;0;0;0;0
+65;39;Claudio Miguel Pizarro Bosio;03.10.1978;349;1;0;0;0
+65;25;João Ricardo Pereira Queirós;22.04.1998;0;0;0;0;0
+65;38;Nikolas Terkelsen Nartey;22.02.2000;6;0;0;0;0
+65;36;Brady Canfield Scott;30.06.1999;0;0;0;0;0
+65;32;Hikmet Çiftçi;10.03.1998;0;0;0;0;0
+65;31;Birk Risa;13.02.1998;81;0;0;0;0
+65;40;Yann Bisseck;29.11.2000;155;0;0;0;0
+65;37;Anas Ouahim;23.09.1997;18;0;0;0;0
+65;30;Ismael Jakobs;17.08.1999;0;0;0;0;0
+65;28;Jan-Christoph Bartels;13.01.1999;0;0;0;0;0
+65;26;Chris Führich;09.01.1998;95;0;0;0;0
+65;27;Filip Kusic;03.06.1996;14;0;0;0;0
+65;2;Kevin Goden;22.02.1999;0;0;0;0;0
+65;41;Vincent Edouard Andre Koziello;28.10.1995;300;1;0;0;0
+65;42;Tomáš Ostrák;05.02.2000;0;0;0;0;0
+81;4;Abdou Diallo;04.05.1996;1966;2;5;0;0
+81;3;Leon Aderemi Balogun;28.06.1988;905;0;2;1;0
+81;38;Gerrit Holtmann;25.03.1995;841;2;1;0;0
+81;11;Emil Berggreen;10.05.1993;508;4;2;0;0
+81;2;Giulio Donati;05.02.1990;1943;0;2;0;1
+81;21;Karim Onisiwo;17.03.1992;115;0;0;0;0
+81;23;Suat Serdar;11.04.1997;1267;2;2;0;0
+81;42;Alexander Hack;08.09.1993;658;1;2;0;0
+81;32;Pablo Ezequiel De Blasis;04.02.1988;1033;1;2;0;0
+81;9;Yoshinori Muto;15.07.1992;1593;7;1;0;0
+81;6;Danny Latza;07.12.1989;1972;2;6;0;0
+81;18;Daniel Brosinski;17.07.1988;1881;1;0;0;0
+81;26;Niko Bungert;24.10.1986;0;0;0;0;0
+81;16;Stefan Bell;24.08.1991;1816;1;6;0;0
+81;25;Jean-Philippe Gbamin;25.09.1995;1870;0;4;0;0
+81;27;Robin Zentner;28.10.1994;1350;0;1;0;0
+81;10;Alexandru Iulian Maxim;08.07.1990;809;1;2;0;0
+81;1;René Adler;15.01.1985;810;0;0;0;0
+81;8;Levin Mete Öztunali;15.03.1996;1171;0;2;0;0
+81;13;Marin Šverko;04.02.1998;0;0;0;0;0
+81;22;Florian Müller;13.11.1997;180;0;0;0;0
+81;7;Robin Kwamina Quaison;09.10.1993;1122;4;3;0;0
+81;39;Benjamin Trümner;17.05.1995;0;0;0;0;0
+81;31;Charmaine Häusl;27.01.1996;0;0;0;0;0
+81;40;Patrick Matthias Manthe;03.08.1993;0;0;0;0;0
+81;30;Heinz Robert Mörschel;24.08.1997;0;0;0;0;0
+81;35;Jayson Breitenbach;12.05.1998;0;0;0;0;0
+81;34;Bote Nzuzi Baku;08.04.1998;0;0;0;0;0
+81;37;Finn Gilbert Dahmen;27.03.1998;0;0;0;0;0
+81;20;Anthony Ujah;14.10.1990;112;0;0;0;0
+81;5;Nigel de Jong;30.11.1984;372;0;2;0;0
