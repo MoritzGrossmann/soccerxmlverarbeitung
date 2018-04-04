@@ -1,6 +1,6 @@
 package models;
 
-import database.Entity;
+import database.interfaces.Entity;
 import database.MatchEntities;
 import database.Result;
 import database.WrongEntityTypeException;
@@ -171,6 +171,6 @@ public class Match implements Entity {
 
     @Override
     public String toString() {
-        return String.valueOf(this.id);
+        return String.format("%d %s %s %s vs. %s", this.id, this.league.getName(), this.group.getName(), this.team1.getTeamName(), this.team2.getTeamName());
     }
 }

@@ -20,7 +20,15 @@ public class Main {
 
         teams.forEach(team-> {
             try {
-                System.out.println(team.store());
+                team.store();
+            } catch (WrongEntityTypeException e) {
+                e.printStackTrace();
+            }
+        });
+
+        matches.forEach(match -> {
+            try {
+                match.store();
             } catch (WrongEntityTypeException e) {
                 e.printStackTrace();
             }

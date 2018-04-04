@@ -27,6 +27,7 @@ public class XmlImporter {
     }
 
     private org.jdom2.Document getXmlDocument() throws ParserConfigurationException, IOException, SAXException {
+
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 
         DocumentBuilder builder = factory.newDocumentBuilder();
@@ -81,6 +82,8 @@ public class XmlImporter {
             root.getChildren("Match", root.getNamespace()).forEach((Element xmlMatch) -> {
                 Match match = new Match();
 
+                match.setId(Integer.parseInt(xmlMatch.getChildText("MatchID", xmlMatch.getNamespace())));
+
                 List<Goal> goals = new ArrayList<>();
 
                 Element xmlGoals = xmlMatch.getChild("Goals", xmlMatch.getNamespace());
@@ -96,7 +99,9 @@ public class XmlImporter {
                 Element xmlMatchresults = xmlMatch.getChild("MatchResults", xmlMatch.getNamespace());
 
                 xmlMatchresults.getChildren("MatchResult", xmlMatchresults.getNamespace()).forEach(xmlMatchResult -> {
-                    matchResults.add(parseMatchResultXml(xmlMatchResult));
+                    MatchResult result = parseMatchResultXml(xmlMatchResult);
+                    result.setMatchId(match.getId());
+                    matchResults.add(result);
                 });
 
                 match.setMatchResults(matchResults);
@@ -148,8 +153,6 @@ public class XmlImporter {
                     e.printStackTrace();
                 }
 
-                match.setId(Integer.parseInt(xmlMatch.getChildText("MatchID", xmlMatch.getNamespace())));
-
                 try {
                     match.setNumberOfViewers(Integer.parseInt(xmlMatch.getChildText("NumberOfViewers", xmlMatch.getNamespace())));
                 } catch (NumberFormatException e) {
@@ -183,6 +186,8 @@ public class XmlImporter {
                 Element xmlGroup = xmlMatch.getChild("Group", xmlMatch.getNamespace());
 
                 match.setGroup(parseGroupXml(xmlGroup));
+
+                match.setFinished(Boolean.parseBoolean(xmlMatch.getChildText("MatchIsFinished", xmlMatch.getNamespace())));
 
                 matches.add(match);
             });

@@ -1,5 +1,6 @@
 package database;
 
+import database.interfaces.Entity;
 import models.League;
 
 import java.sql.PreparedStatement;
@@ -35,8 +36,6 @@ public class LeagueEntities extends DatabaseHelper {
         try {
             League league = (League) entity;
 
-            Class.forName("com.mysql.jdbc.Driver").newInstance();
-
             connection = createConnection();
 
             String sql = String.format("INSERT INTO %s (%s,%s) VALUES (?,?)", LEAGUE_TABLE, ID_PROPERTY, LEAGUE_NAME_PROPERTY);
@@ -52,7 +51,7 @@ public class LeagueEntities extends DatabaseHelper {
                 return new Result(false, "");
             }
 
-        } catch (IllegalAccessException | InstantiationException | SQLException | ClassNotFoundException e) {
+        } catch (SQLException e) {
             return new Result(false, e.getMessage());
         }
 
@@ -62,8 +61,6 @@ public class LeagueEntities extends DatabaseHelper {
     @Override
     public Result delete(Entity entity) {
         try {
-            Class.forName("com.mysql.jdbc.Driver").newInstance();
-
             connection = createConnection();
 
             String sql = String.format("DELETE FROM %s WHERE %s = %d", LEAGUE_TABLE, ID_PROPERTY, entity.getId());
@@ -75,7 +72,7 @@ public class LeagueEntities extends DatabaseHelper {
             } else {
                 return new Result(false, "Unbekannter Fehler beim Löschen");
             }
-        } catch (IllegalAccessException | InstantiationException | SQLException | ClassNotFoundException e) {
+        } catch (SQLException e) {
             return new Result(false, e.getMessage());
         }
     }
@@ -84,8 +81,6 @@ public class LeagueEntities extends DatabaseHelper {
     public boolean contains(Entity entity) {
 
         try {
-            Class.forName("com.mysql.jdbc.Driver").newInstance();
-
             connection = createConnection();
 
             String sql = String.format("SELECT * FROM %s WHERE %s = %d", LEAGUE_TABLE, ID_PROPERTY, entity.getId());
@@ -93,7 +88,7 @@ public class LeagueEntities extends DatabaseHelper {
             PreparedStatement statement = connection.prepareStatement(sql);
 
             return statement.executeQuery().next();
-        } catch (IllegalAccessException | InstantiationException | SQLException | ClassNotFoundException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         return false;

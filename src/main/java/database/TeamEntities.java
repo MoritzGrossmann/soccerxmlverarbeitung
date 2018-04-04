@@ -1,5 +1,6 @@
 package database;
 
+import database.interfaces.Entity;
 import models.Team;
 
 import java.sql.PreparedStatement;
@@ -40,8 +41,6 @@ public class TeamEntities extends DatabaseHelper {
 
             Team team = (Team)entity;
 
-            Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
-
             connection = createConnection();
 
             String sql = String.format("INSERT INTO %s (%s, %s, %s, %s) values (?,?,?,?)", TEAM_TABLE, ID_PROPERTY, SHORT_NAME_PROPERTY, ICON_URL_PROPERTY, NAME_PROPERTY);
@@ -59,7 +58,7 @@ public class TeamEntities extends DatabaseHelper {
 
             return new Result(true, String.format("Team %s was saved successful", team.getTeamName()));
 
-        } catch (IllegalAccessException | InstantiationException | SQLException | ClassNotFoundException e) {
+        } catch (SQLException e) {
             return new Result(false, e.getMessage());
         }
     }
@@ -67,8 +66,6 @@ public class TeamEntities extends DatabaseHelper {
     @Override
     public Result delete(Entity entity) {
         try {
-            Class.forName("com.mysql.jdbc.Driver").newInstance();
-
             connection = createConnection();
 
             String sql = String.format("DELETE FROM %s WHERE %s = %d", TEAM_TABLE, ID_PROPERTY, entity.getId());
@@ -80,7 +77,7 @@ public class TeamEntities extends DatabaseHelper {
             } else {
                 return new Result(false, "Unbekannter Fehler beim Löschen");
             }
-        } catch (IllegalAccessException | InstantiationException | SQLException | ClassNotFoundException e) {
+        } catch (SQLException e) {
             return new Result(false, e.getMessage());
         }
     }
@@ -89,8 +86,6 @@ public class TeamEntities extends DatabaseHelper {
     public boolean contains(Entity entity) {
 
         try {
-            Class.forName("com.mysql.jdbc.Driver").newInstance();
-
             connection = createConnection();
 
             String sql = String.format("SELECT * FROM %s WHERE %s = %d", TEAM_TABLE, ID_PROPERTY, entity.getId());
@@ -98,7 +93,7 @@ public class TeamEntities extends DatabaseHelper {
             PreparedStatement statement = connection.prepareStatement(sql);
 
             return statement.executeQuery().next();
-        } catch (IllegalAccessException | InstantiationException | SQLException | ClassNotFoundException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         return false;

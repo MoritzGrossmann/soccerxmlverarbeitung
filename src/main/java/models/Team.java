@@ -1,6 +1,6 @@
 package models;
 
-import database.Entity;
+import database.interfaces.Entity;
 import database.Result;
 import database.TeamEntities;
 import database.WrongEntityTypeException;

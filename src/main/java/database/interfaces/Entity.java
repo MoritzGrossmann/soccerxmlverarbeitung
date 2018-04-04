@@ -1,4 +1,7 @@
-package database;
+package database.interfaces;
+
+import database.Result;
+import database.WrongEntityTypeException;
 
 public interface Entity {
 

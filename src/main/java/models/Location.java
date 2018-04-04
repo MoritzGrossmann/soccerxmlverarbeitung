@@ -1,7 +1,9 @@
 package models;
 
-import database.Entity;
+import database.LocationEntities;
 import database.Result;
+import database.WrongEntityTypeException;
+import database.interfaces.Entity;
 
 public class Location implements Entity {
 
@@ -41,18 +43,18 @@ public class Location implements Entity {
     }
 
     @Override
-    public Result store() {
-        return null;
+    public Result store() throws WrongEntityTypeException{
+        return LocationEntities.getInstance().push(this);
     }
 
     @Override
     public boolean exist() {
-        return false;
+        return LocationEntities.getInstance().contains(this);
     }
 
     @Override
     public Result delete() {
-        return null;
+        return LocationEntities.getInstance().delete(this);
     }
 
     @Override

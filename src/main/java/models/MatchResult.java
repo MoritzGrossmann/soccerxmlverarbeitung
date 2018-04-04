@@ -1,12 +1,15 @@
 package models;
 
-import database.Entity;
+import database.MatchResultEntities;
+import database.interfaces.Entity;
 import database.Result;
 import database.WrongEntityTypeException;
 
 public class MatchResult implements Entity {
 
     private int id;
+
+    private int matchId;
 
     private int pointsTeam1;
 
@@ -22,6 +25,14 @@ public class MatchResult implements Entity {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getMatchId() {
+        return matchId;
+    }
+
+    public void setMatchId(int matchId) {
+        this.matchId = matchId;
     }
 
     public int getPointsTeam1() {
@@ -74,17 +85,17 @@ public class MatchResult implements Entity {
 
     @Override
     public Result store()throws WrongEntityTypeException {
-        return null;
+        return MatchResultEntities.getInstance().push(this);
     }
 
     @Override
     public boolean exist() {
-        return false;
+        return MatchResultEntities.getInstance().contains(this);
     }
 
     @Override
     public Result delete() {
-        return null;
+        return MatchResultEntities.getInstance().delete(this);
     }
 
     @Override

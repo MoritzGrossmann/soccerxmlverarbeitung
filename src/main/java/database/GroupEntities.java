@@ -1,5 +1,6 @@
 package database;
 
+import database.interfaces.Entity;
 import models.Group;
 
 import java.sql.PreparedStatement;
@@ -35,7 +36,6 @@ public class GroupEntities extends DatabaseHelper {
         Group group = (Group)entity;
 
         try {
-            Class.forName("com.mysql.jdbc.Driver").newInstance();
 
             connection = createConnection();
 
@@ -52,7 +52,7 @@ public class GroupEntities extends DatabaseHelper {
             } else {
                 return new Result(false, String.format("Unknown error while saving Group %s", group.getName()));
             }
-        } catch (IllegalAccessException | InstantiationException | SQLException | ClassNotFoundException e) {
+        } catch (SQLException e) {
             return new Result(false, e.getMessage());
         }
     }
@@ -60,7 +60,6 @@ public class GroupEntities extends DatabaseHelper {
     @Override
     public Result delete(Entity entity) {
         try {
-            Class.forName("com.mysql.jdbc.Driver").newInstance();
 
             connection = createConnection();
 
@@ -73,7 +72,7 @@ public class GroupEntities extends DatabaseHelper {
             } else {
                 return new Result(false, "Unbekannter Fehler beim Löschen");
             }
-        } catch (IllegalAccessException | InstantiationException | SQLException | ClassNotFoundException e) {
+        } catch (SQLException e) {
             return new Result(false, e.getMessage());
         }
     }
@@ -82,8 +81,6 @@ public class GroupEntities extends DatabaseHelper {
     public boolean contains(Entity entity) {
 
         try {
-            Class.forName("com.mysql.jdbc.Driver").newInstance();
-
             connection = createConnection();
 
             String sql = String.format("SELECT * FROM %s WHERE %s = %d", GROUP_TABLE, ID_PROPERTY, entity.getId());
@@ -91,7 +88,7 @@ public class GroupEntities extends DatabaseHelper {
             PreparedStatement statement = connection.prepareStatement(sql);
 
             return statement.executeQuery().next();
-        } catch (IllegalAccessException | InstantiationException | SQLException | ClassNotFoundException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         return false;
