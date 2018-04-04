@@ -43,6 +43,8 @@ public class GoalEntities extends DatabaseHelper {
 
     private static final String MATCH_ID_PROPERTY = "MatchID";
 
+    private static final String COMMENT_PROPERTY = "Comment";
+
     @Override
     public Result push(Entity entity) throws WrongEntityTypeException{
 
@@ -55,7 +57,7 @@ public class GoalEntities extends DatabaseHelper {
 
             connection = createConnection();
 
-            String sql = String.format("INSERT INTO %s (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s) VALUES (?,?,?,?,?,?,?,?,?,?)",
+            String sql = String.format("INSERT INTO %s (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s) VALUES (?,?,?,?,?,?,?,?,?,?,?)",
                     GOAL_TABLE,
                     ID_PROPERTY,
                     GOAL_GETTER_ID_PROPERTY,
@@ -66,7 +68,8 @@ public class GoalEntities extends DatabaseHelper {
                     MATCH_MINUTE_PROPERTY,
                     SCORE_TEAM_1_PROPERTY,
                     SCORE_TEAM_2_PROPERTY,
-                    MATCH_ID_PROPERTY
+                    MATCH_ID_PROPERTY,
+                    COMMENT_PROPERTY
             );
 
             PreparedStatement statement = connection.prepareStatement(sql);
@@ -81,6 +84,7 @@ public class GoalEntities extends DatabaseHelper {
             statement.setInt(8, goal.getScoreTeam1());
             statement.setInt(9, goal.getScoreTeam2());
             statement.setInt(10, goal.getMatchId());
+            statement.setString(11, goal.getComment());
 
             if (statement.execute()) {
                 return new Result(true, String.format("Goal %d was saved successful", goal.getId()));

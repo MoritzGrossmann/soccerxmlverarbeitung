@@ -23,9 +23,9 @@ public class MatchResultEntities extends DatabaseHelper {
         return instance;
     }
 
-    private static final String POINTS_TEAM_1_PROPERTY = "PointsTeams1";
+    private static final String POINTS_TEAM_1_PROPERTY = "PointsTeam1";
 
-    private static final String POINTS_TEAM_2_PROPERTY = "PointsTeams2";
+    private static final String POINTS_TEAM_2_PROPERTY = "PointsTeam2";
 
     private static final String RESULT_DESCRIPTION_PROPERTY = "ResultDescription";
 
@@ -33,7 +33,7 @@ public class MatchResultEntities extends DatabaseHelper {
 
     private static final String RESULT_NAME_PROPERTY = "ResultName";
 
-    private static final String RESULT_ORDER_ID_PROPERY = "ResultOrderID";
+    private static final String RESULT_ORDER_ID_PROPERTY = "ResultOrderID";
 
     private static final String RESULT_TYPE_ID_PROPERTY = "ResultTypeID";
 
@@ -54,7 +54,7 @@ public class MatchResultEntities extends DatabaseHelper {
                     MATCH_RESULT_TABLE,
                     ID_PROPERTY,
                     MATCH_ID_PROPERTY,
-                    RESULT_ORDER_ID_PROPERY,
+                    RESULT_ORDER_ID_PROPERTY,
                     RESULT_TYPE_ID_PROPERTY,
                     RESULT_NAME_PROPERTY,
                     RESULT_DESCRIPTION_PROPERTY,

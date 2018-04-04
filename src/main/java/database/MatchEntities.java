@@ -86,7 +86,6 @@ public class MatchEntities extends DatabaseHelper{
                 match.getGroup().store();
             }
 
-
             connection = createConnection();
 
             String sql = String.format("INSERT INTO %s (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s, %s) values (?,?,?,?,?,?,?,?,?,?,?,?)",
@@ -125,28 +124,30 @@ public class MatchEntities extends DatabaseHelper{
             statement.setString(11, match.getTimezone());
             statement.setInt(12, match.getGroup().getId());
 
-            if (statement.execute()) {
-
-                match.getGoals().forEach(goal -> {
-                    try {
-                        goal.store();
-                    } catch (WrongEntityTypeException e) {
-                        e.printStackTrace();
-                    }
-                });
-
-                match.getMatchResults().forEach(matchResult -> {
-                    try {
-                        matchResult.store();
-                    } catch (WrongEntityTypeException e) {
-                        e.printStackTrace();
-                    }
-                });
-
-                return new Result(true, String.format("Match %s was saved succesful", match.getId()));
-            } else {
-                return new Result(false, "");
+            try {
+                statement.execute();
+            } catch (SQLException e) {
+                e.printStackTrace();
             }
+
+            match.getGoals().forEach(goal -> {
+                try {
+                    goal.store();
+                } catch (WrongEntityTypeException e) {
+                    e.printStackTrace();
+                }
+            });
+
+            match.getMatchResults().forEach(matchResult -> {
+                try {
+                    matchResult.store();
+                } catch (WrongEntityTypeException e) {
+                    e.printStackTrace();
+                }
+            });
+
+            return new Result(true, String.format("Match %s was saved succesful", match.getId()));
+
 
         } catch (SQLException e) {
             return new Result(false, e.getMessage());

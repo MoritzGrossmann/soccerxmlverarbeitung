@@ -4,7 +4,10 @@ import database.interfaces.Entity;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public abstract class DatabaseHelper {
 
@@ -31,6 +34,29 @@ public abstract class DatabaseHelper {
     }
 
     protected static Connection connection;
+
+    public static void truncate() throws SQLException {
+
+        Connection connection = createConnection();
+
+        List<String> sqls = new ArrayList<>();
+        sqls.add(String.format("TRUNCATE TABLE %s", GOAL_TABLE));
+        sqls.add(String.format("TRUNCATE TABLE %s", MATCH_RESULT_TABLE));
+        sqls.add(String.format("TRUNCATE TABLE %s", LEAGUE_TABLE));
+        sqls.add(String.format("TRUNCATE TABLE %s", LOCATION_TABLE));
+        sqls.add(String.format("TRUNCATE TABLE %s", GROUP_TABLE));
+        sqls.add(String.format("TRUNCATE TABLE %s", MATCH_TABLE));
+        sqls.add(String.format("TRUNCATE TABLE %s", TEAM_TABLE));
+
+        sqls.forEach(sql -> {
+            try {
+                PreparedStatement statement = connection.prepareStatement(sql);
+                statement.execute();
+            } catch (SQLException e) {
+                System.out.println(e.getMessage());
+            }
+        });
+    }
 
     public abstract Result push(Entity entity) throws WrongEntityTypeException;
 
