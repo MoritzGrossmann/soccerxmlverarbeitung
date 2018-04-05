@@ -1,30 +1,29 @@
-import database.DatabaseHelper;
+import csv.CsvImporter;
 import database.WrongEntityTypeException;
 import models.Match;
+import models.Player;
 import models.Team;
 import xml.XmlImporter;
 
 import java.io.File;
-import java.sql.SQLException;
+import java.io.IOException;
 import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Truncate Tables");
+        File playerFile = new File("./res/Player-2018.csv");
 
         try {
-            DatabaseHelper.truncate();
-        } catch (SQLException e) {
-            System.out.println("Error while truncating Tables " + e.getMessage());
+            List<Player> players = new CsvImporter(playerFile).readPlayers();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
-        System.out.println("Truncating was successfull");
+        File teamFile = new File("./res/teams-2018.xml");
 
-        File teamFile = new File("C:\\Users\\Moritz\\IdeaProjects\\soccerxmlverarbeitung\\src\\main\\resources\\teams-2018.xml");
-
-        File matchFile = new File("C:\\Users\\Moritz\\IdeaProjects\\soccerxmlverarbeitung\\src\\main\\resources\\matches-2018.xml");
+        File matchFile = new File("./res/matches-2018.xml");
 
         List<Team> teams = new XmlImporter(teamFile).readTeams();
 
