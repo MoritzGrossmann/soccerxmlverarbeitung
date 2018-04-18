@@ -1,12 +1,11 @@
 package models;
 
-import database.interfaces.Entity;
-import database.GoalEntities;
-import database.Result;
-import database.WrongEntityTypeException;
+import javax.persistence.*;
 
-public class Goal implements Entity {
+@Entity
+public class Goal {
 
+    @Id
     private int id;
 
     private int goalGetterId;
@@ -28,6 +27,10 @@ public class Goal implements Entity {
     private int scoreTeam2;
 
     private String comment;
+
+    @OneToMany(fetch = FetchType.LAZY, targetEntity = Match.class)
+    @JoinColumn(name = "id")
+    private Match match;
 
     public Goal() {
 
@@ -130,23 +133,15 @@ public class Goal implements Entity {
         this.comment = comment;
     }
 
-    @Override
-    public Result store() throws WrongEntityTypeException {
-        return GoalEntities.getInstance().push(this);
-    }
-
-    @Override
-    public boolean exist() {
-        return GoalEntities.getInstance().contains(this);
-    }
-
-    @Override
-    public Result delete() {
-        return GoalEntities.getInstance().delete(this);
-    }
-
-    @Override
     public int getId() {
-        return this.id;
+        return id;
+    }
+
+    public Match getMatch() {
+        return match;
+    }
+
+    public void setMatch(Match match) {
+        this.match = match;
     }
 }

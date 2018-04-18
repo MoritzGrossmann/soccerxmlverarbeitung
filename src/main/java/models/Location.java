@@ -1,17 +1,23 @@
 package models;
 
-import database.LocationEntities;
-import database.Result;
-import database.WrongEntityTypeException;
-import database.interfaces.Entity;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import java.util.List;
 
-public class Location implements Entity {
+@Entity
+public class Location {
 
+    @Id
     private int id;
 
     private String city;
 
     private String stadium;
+
+    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Match.class)
+    private List<Match> matches;
 
     public Location(int id, String city, String stadium) {
         this.id = id;
@@ -42,23 +48,15 @@ public class Location implements Entity {
         this.stadium = stadium;
     }
 
-    @Override
-    public Result store() throws WrongEntityTypeException{
-        return LocationEntities.getInstance().push(this);
-    }
-
-    @Override
-    public boolean exist() {
-        return LocationEntities.getInstance().contains(this);
-    }
-
-    @Override
-    public Result delete() {
-        return LocationEntities.getInstance().delete(this);
-    }
-
-    @Override
     public int getId() {
         return this.id;
+    }
+
+    public List<Match> getMatches() {
+        return matches;
+    }
+
+    public void setMatches(List<Match> matches) {
+        this.matches = matches;
     }
 }

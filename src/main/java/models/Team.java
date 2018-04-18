@@ -1,12 +1,15 @@
 package models;
 
-import database.interfaces.Entity;
-import database.Result;
-import database.TeamEntities;
-import database.WrongEntityTypeException;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import java.util.List;
 
-public class Team implements Entity {
+@Entity
+public class Team  {
 
+    @Id
     private int id;
 
     private String shortName;
@@ -15,6 +18,9 @@ public class Team implements Entity {
 
     private String teamName;
 
+    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Match.class)
+    private List<Match> matches;
+
     public Team(int id, String shortName, String teamIconUrl, String teamName) {
         this.id = id;
         this.shortName = shortName;
@@ -22,7 +28,6 @@ public class Team implements Entity {
         this.teamName = teamName;
     }
 
-    @Override
     public int getId() {
         return id;
     }
@@ -55,18 +60,11 @@ public class Team implements Entity {
         this.teamName = teamName;
     }
 
-    @Override
-    public Result store() throws WrongEntityTypeException {
-        return TeamEntities.getInstance().push(this);
+    public List<Match> getMatches() {
+        return matches;
     }
 
-    @Override
-    public boolean exist() {
-        return TeamEntities.getInstance().contains(this);
-    }
-
-    @Override
-    public Result delete() {
-        return TeamEntities.getInstance().delete(this);
+    public void setMatches(List<Match> matches) {
+        this.matches = matches;
     }
 }

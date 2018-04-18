@@ -1,12 +1,11 @@
 package models;
 
-import database.MatchResultEntities;
-import database.interfaces.Entity;
-import database.Result;
-import database.WrongEntityTypeException;
+import javax.persistence.*;
 
-public class MatchResult implements Entity {
+@Entity
+public class MatchResult {
 
+    @Id
     private int id;
 
     private int matchId;
@@ -22,6 +21,10 @@ public class MatchResult implements Entity {
     private int orderId;
 
     private int typeId;
+
+    @OneToMany(fetch = FetchType.LAZY, targetEntity = Match.class)
+    @JoinColumn(name = "id")
+    private Match match;
 
     public void setId(int id) {
         this.id = id;
@@ -83,23 +86,15 @@ public class MatchResult implements Entity {
         this.typeId = typeId;
     }
 
-    @Override
-    public Result store()throws WrongEntityTypeException {
-        return MatchResultEntities.getInstance().push(this);
-    }
-
-    @Override
-    public boolean exist() {
-        return MatchResultEntities.getInstance().contains(this);
-    }
-
-    @Override
-    public Result delete() {
-        return MatchResultEntities.getInstance().delete(this);
-    }
-
-    @Override
     public int getId() {
-        return this.id;
+        return id;
+    }
+
+    public Match getMatch() {
+        return match;
+    }
+
+    public void setMatch(Match match) {
+        this.match = match;
     }
 }

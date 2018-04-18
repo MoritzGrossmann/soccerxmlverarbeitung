@@ -1,14 +1,13 @@
 package models;
 
-import database.PlayerEntities;
-import database.Result;
-import database.WrongEntityTypeException;
-import database.interfaces.Entity;
-
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Date;
 
-public class Player implements Entity {
+@Entity
+public class Player {
 
+    @Id
     private int teamId;
 
     private int trikotNr;
@@ -102,23 +101,5 @@ public class Player implements Entity {
         this.redCards = redCards;
     }
 
-    @Override
-    public Result store() throws WrongEntityTypeException {
-        return PlayerEntities.getInstance().push(this);
-    }
 
-    @Override
-    public boolean exist() {
-        return PlayerEntities.getInstance().contains(this);
-    }
-
-    @Override
-    public Result delete() {
-        return PlayerEntities.getInstance().delete(this);
-    }
-
-    @Override
-    public int getId() {
-        return 0;
-    }
 }

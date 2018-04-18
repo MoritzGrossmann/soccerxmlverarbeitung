@@ -1,10 +1,14 @@
 import csv.CsvImporter;
 import database.WrongEntityTypeException;
+import database.interfaces.Entity;
 import models.Match;
 import models.Player;
 import models.Team;
 import xml.XmlImporter;
 
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
@@ -30,19 +34,17 @@ public class Main {
         List<Match> matches = new XmlImporter(matchFile).readMatches();
 
         teams.forEach(team-> {
-            try {
-                team.store();
-            } catch (WrongEntityTypeException e) {
-                e.printStackTrace();
-            }
+
         });
 
+        EntityManager entityManager = Persistence.createEntityManagerFactory("soccerpersistence").createEntityManager();
+
         matches.forEach(match -> {
-            try {
-                match.store();
-            } catch (WrongEntityTypeException e) {
-                e.printStackTrace();
-            }
+            entityManager.getTransaction().begin();
+            entityManager.persist(match);
+            entityManager.getTransaction().commit();
         });
+
+        entityManager.close();
     }
 }

@@ -1,23 +1,31 @@
 package models;
 
-import database.interfaces.Entity;
 import database.MatchEntities;
 import database.Result;
 import database.WrongEntityTypeException;
 
+import javax.persistence.*;
 import java.sql.Date;
 import java.util.List;
 
-public class Match implements Entity {
+@Entity
+public class Match  {
 
+    @Id
     private int id;
 
     private Date lastUpdateTime;
 
+    @OneToMany(fetch = FetchType.LAZY, targetEntity = League.class)
+    @JoinColumn(name = "id")
     private League league;
 
+    @OneToMany(fetch = FetchType.LAZY, targetEntity = Match.class)
+    @JoinColumn(name = "id")
     private Location location;
 
+    @OneToMany(fetch = FetchType.LAZY, targetEntity = Group.class)
+    @JoinColumn(name = "id")
     private Group group;
 
     private Date dateTime;
@@ -28,15 +36,22 @@ public class Match implements Entity {
 
     private int numberOfViewers;
 
+    @OneToMany(fetch = FetchType.LAZY, targetEntity = Team.class)
+    @JoinColumn(name = "id")
     private Team team1;
 
+    @OneToMany(fetch = FetchType.LAZY, targetEntity = Team.class)
+    @JoinColumn(name = "id")
     private Team team2;
 
     private String timezone;
 
+    @ManyToOne(fetch = FetchType.LAZY, targetEntity = MatchResult.class)
     private List<MatchResult> matchResults;
 
+    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Goal.class)
     private List<Goal> goals;
+
 
     public Match() {
     }
@@ -149,28 +164,7 @@ public class Match implements Entity {
         this.goals = goals;
     }
 
-    @Override
-    public Result store() throws WrongEntityTypeException {
-        return MatchEntities.getInstance().push(this);
-    }
-
-    @Override
-    public boolean exist() {
-        return MatchEntities.getInstance().contains(this);
-    }
-
-    @Override
-    public Result delete() {
-        return MatchEntities.getInstance().delete(this);
-    }
-
-    @Override
     public int getId() {
-        return this.id;
-    }
-
-    @Override
-    public String toString() {
-        return String.format("%d %s %s %s vs. %s", this.id, this.league.getName(), this.group.getName(), this.team1.getTeamName(), this.team2.getTeamName());
+        return id;
     }
 }

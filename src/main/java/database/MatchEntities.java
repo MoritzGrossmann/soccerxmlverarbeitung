@@ -64,95 +64,96 @@ public class MatchEntities extends DatabaseHelper{
 
     @Override
     public Result push(Entity entity) throws WrongEntityTypeException{
-        try {
-
-            if (!(entity instanceof Match)) {
-                throw new WrongEntityTypeException();
-            }
-
-            Match match = (Match) entity;
-
-            if (!match.getLeague().exist()) {
-                match.getLeague().store();
-            }
-
-            if (match.getLocation() != null) {
-                if (!match.getLocation().exist()) {
-                    match.getLocation().store();
-                }
-            }
-
-            if (!match.getGroup().exist()){
-                match.getGroup().store();
-            }
-
-            connection = createConnection();
-
-            String sql = String.format("INSERT INTO %s (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s, %s) values (?,?,?,?,?,?,?,?,?,?,?,?)",
-                    MATCH_TABLE,
-                    ID_PROPERTY,
-                    LAST_UPDATE_TIME_PROPERTY,
-                    LEAGUE_ID_PROPERTY,
-                    LOCATION_ID_PROPERTY,
-                    MATCH_DATE_TIME_PROPERTY,
-                    MATCH_DATE_TIME_UTC_PROPERTY,
-                    MATCH_IS_FINISHED_PROPERTY,
-                    NUMBER_OF_VIEWERS_PROPERTY,
-                    TEAM_1_ID_PROPERTY,
-                    TEAM_2_ID_PROPERTY,
-                    TIMEZONE_ID_PROPERTY,
-                    GROUP_ID_PROPERTY
-            );
-
-            PreparedStatement statement = connection.prepareStatement(sql);
-
-            statement.setInt(1, match.getId());
-            statement.setDate(2, match.getLastUpdateTime());
-            statement.setInt(3, match.getLeague().getId());
-            try {
-                statement.setInt(4, match.getLocation().getId());
-            } catch (NullPointerException e) {
-                statement.setNull(4, Types.INTEGER);
-
-            }
-            statement.setDate(5, match.getDateTime());
-            statement.setDate(6, match.getDateTimeUTC());
-            statement.setBoolean(7, match.isFinished());
-            statement.setInt(8, match.getNumberOfViewers());
-            statement.setInt(9, match.getTeam1().getId());
-            statement.setInt(10, match.getTeam2().getId());
-            statement.setString(11, match.getTimezone());
-            statement.setInt(12, match.getGroup().getId());
-
-            try {
-                statement.execute();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-
-            match.getGoals().forEach(goal -> {
-                try {
-                    goal.store();
-                } catch (WrongEntityTypeException e) {
-                    e.printStackTrace();
-                }
-            });
-
-            match.getMatchResults().forEach(matchResult -> {
-                try {
-                    matchResult.store();
-                } catch (WrongEntityTypeException e) {
-                    e.printStackTrace();
-                }
-            });
-
-            return new Result(true, String.format("Match %s was saved succesful", match.getId()));
-
-
-        } catch (SQLException e) {
-            return new Result(false, e.getMessage());
-        }
-    }
+//        try {
+//
+//            if (!(entity instanceof Match)) {
+//                throw new WrongEntityTypeException();
+//            }
+//
+//            Match match = (Match) entity;
+//
+//            if (!match.getLeague().exist()) {
+//                match.getLeague().store();
+//            }
+//
+//            if (match.getLocation() != null) {
+//                if (!match.getLocation().exist()) {
+//                    match.getLocation().store();
+//                }
+//            }
+//
+//            if (!match.getGroup().exist()){
+//                match.getGroup().store();
+//            }
+//
+//            connection = createConnection();
+//
+//            String sql = String.format("INSERT INTO %s (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s, %s) values (?,?,?,?,?,?,?,?,?,?,?,?)",
+//                    MATCH_TABLE,
+//                    ID_PROPERTY,
+//                    LAST_UPDATE_TIME_PROPERTY,
+//                    LEAGUE_ID_PROPERTY,
+//                    LOCATION_ID_PROPERTY,
+//                    MATCH_DATE_TIME_PROPERTY,
+//                    MATCH_DATE_TIME_UTC_PROPERTY,
+//                    MATCH_IS_FINISHED_PROPERTY,
+//                    NUMBER_OF_VIEWERS_PROPERTY,
+//                    TEAM_1_ID_PROPERTY,
+//                    TEAM_2_ID_PROPERTY,
+//                    TIMEZONE_ID_PROPERTY,
+//                    GROUP_ID_PROPERTY
+//            );
+//
+//            PreparedStatement statement = connection.prepareStatement(sql);
+//
+//            statement.setInt(1, match.getId());
+//            statement.setDate(2, match.getLastUpdateTime());
+//            statement.setInt(3, match.getLeague().getId());
+//            try {
+//                statement.setInt(4, match.getLocation().getId());
+//            } catch (NullPointerException e) {
+//                statement.setNull(4, Types.INTEGER);
+//
+//            }
+//            statement.setDate(5, match.getDateTime());
+//            statement.setDate(6, match.getDateTimeUTC());
+//            statement.setBoolean(7, match.isFinished());
+//            statement.setInt(8, match.getNumberOfViewers());
+//            statement.setInt(9, match.getTeam1().getId());
+//            statement.setInt(10, match.getTeam2().getId());
+//            statement.setString(11, match.getTimezone());
+//            statement.setInt(12, match.getGroup().getId());
+//
+//            try {
+//                statement.execute();
+//            } catch (SQLException e) {
+//                e.printStackTrace();
+//            }
+//
+//            match.getGoals().forEach(goal -> {
+//                try {
+//                    goal.store();
+//                } catch (WrongEntityTypeException e) {
+//                    e.printStackTrace();
+//                }
+//            });
+//
+//            match.getMatchResults().forEach(matchResult -> {
+//                try {
+//                    matchResult.store();
+//                } catch (WrongEntityTypeException e) {
+//                    e.printStackTrace();
+//                }
+//            });
+//
+//            return new Result(true, String.format("Match %s was saved succesful", match.getId()));
+//
+//
+//        } catch (SQLException e) {
+//            return new Result(false, e.getMessage());
+//     }
+        return null;
+  }
 
     @Override
     public Result delete(Entity entity) {

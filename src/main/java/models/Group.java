@@ -1,17 +1,27 @@
 package models;
 
-import database.interfaces.Entity;
 import database.GroupEntities;
 import database.Result;
 import database.WrongEntityTypeException;
 
-public class Group implements Entity {
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import java.util.List;
 
+@Entity
+public class Group {
+
+    @Id
     private int id;
 
     private String name;
 
     private int orderId;
+
+    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Match.class)
+    private List<Match> matches;
 
     public Group() {
     }
@@ -42,23 +52,15 @@ public class Group implements Entity {
         this.orderId = orderId;
     }
 
-    @Override
-    public Result store() throws WrongEntityTypeException {
-        return GroupEntities.getInstance().push(this);
-    }
-
-    @Override
-    public boolean exist() {
-        return GroupEntities.getInstance().contains(this);
-    }
-
-    @Override
-    public Result delete() {
-        return GroupEntities.getInstance().delete(this);
-    }
-
-    @Override
     public int getId() {
-        return this.id;
+        return id;
+    }
+
+    public List<Match> getMatches() {
+        return matches;
+    }
+
+    public void setMatches(List<Match> matches) {
+        this.matches = matches;
     }
 }

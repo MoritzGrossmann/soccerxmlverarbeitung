@@ -1,12 +1,15 @@
 package models;
 
-import database.interfaces.Entity;
-import database.LeagueEntities;
-import database.Result;
-import database.WrongEntityTypeException;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import java.util.List;
 
-public class League implements Entity {
+@Entity
+public class League  {
 
+    @Id
     private int id;
 
     private String name = "";
@@ -15,6 +18,9 @@ public class League implements Entity {
         this.id = id;
         this.name = name;
     }
+
+    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Match.class)
+    private List<Match> matches;
 
     public League() {
     }
@@ -31,22 +37,6 @@ public class League implements Entity {
         this.name = name;
     }
 
-    @Override
-    public Result store() throws WrongEntityTypeException {
-        return LeagueEntities.getInstance().push(this);
-    }
-
-    @Override
-    public boolean exist() {
-        return LeagueEntities.getInstance().contains(this);
-    }
-
-    @Override
-    public Result delete() {
-        return LeagueEntities.getInstance().delete(this);
-    }
-
-    @Override
     public int getId() {
         return this.id;
     }
