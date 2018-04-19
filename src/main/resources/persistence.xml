@@ -13,15 +13,13 @@
         <class>models.Team</class>
         <class>models.Player</class>
         <properties>
-            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
-            <property name="javax.persistence.jdbc.url"
-                      value="jdbc:mysql://localhost:3306/soccerjpa" />
-            <property name="javax.persistence.jdbc.user" value="soccer" />
-            <property name="javax.persistence.jdbc.password" value="soccer" />
-
             <!-- EclipseLink should create the database schema automatically -->
             <property name="eclipselink.ddl-generation" value="create" />
             <property name="eclipselink.ddl-generation.output-mode" value="database" />
+            <property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost:3306/soccerjpa"/>
+            <property name="eclipselink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="eclipselink.jdbc.user" value="soccer"/>
+            <property name="eclipselink.jdbc.password" value="soccer"/>
         </properties>
 
     </persistence-unit>

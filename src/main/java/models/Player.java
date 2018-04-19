@@ -122,5 +122,8 @@ public class Player {
         this.redCards = redCards;
     }
 
-
+    @Override
+    public String toString() {
+        return this.teamId + " " + this.trikotNr + " " + this.name;
+    }
 }

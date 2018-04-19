@@ -9,6 +9,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -17,11 +18,17 @@ public class Main {
 
         File playerFile = new File("./src/main/resources/Player-2018.csv");
 
+        List<Player> players = new ArrayList<>();
+
         try {
-            List<Player> players = new CsvImporter(playerFile).readPlayers();
+            players = new CsvImporter(playerFile).readPlayers();
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        players.forEach(player -> {
+            System.out.println(player);
+        });
 
         File teamFile = new File("./src/main/resources/teams-2018.xml");
 
