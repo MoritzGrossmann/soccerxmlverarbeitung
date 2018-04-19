@@ -1,6 +1,4 @@
 import csv.CsvImporter;
-import database.WrongEntityTypeException;
-import database.interfaces.Entity;
 import models.Match;
 import models.Player;
 import models.Team;
@@ -17,7 +15,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        File playerFile = new File("./res/Player-2018.csv");
+        File playerFile = new File("./src/main/resources/Player-2018.csv");
 
         try {
             List<Player> players = new CsvImporter(playerFile).readPlayers();
@@ -25,19 +23,16 @@ public class Main {
             e.printStackTrace();
         }
 
-        File teamFile = new File("./res/teams-2018.xml");
+        File teamFile = new File("./src/main/resources/teams-2018.xml");
 
-        File matchFile = new File("./res/matches-2018.xml");
+        File matchFile = new File("./src/main/resources/matches-2018.xml");
 
         List<Team> teams = new XmlImporter(teamFile).readTeams();
 
         List<Match> matches = new XmlImporter(matchFile).readMatches();
 
-        teams.forEach(team-> {
-
-        });
-
-        EntityManager entityManager = Persistence.createEntityManagerFactory("soccerpersistence").createEntityManager();
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("soccerpersistence");
+        EntityManager entityManager = emf.createEntityManager();
 
         matches.forEach(match -> {
             entityManager.getTransaction().begin();

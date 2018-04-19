@@ -1,17 +1,17 @@
 package models;
 
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.util.List;
 
-@Entity
+@Entity(name = "League")
+@Table(name = "league")
 public class League  {
 
     @Id
+    @Column(name = "id")
     private int id;
 
+    @Column(name = "name")
     private String name = "";
 
     public League(int id, String name) {
@@ -19,7 +19,7 @@ public class League  {
         this.name = name;
     }
 
-    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Match.class)
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "league",cascade = CascadeType.ALL)
     private List<Match> matches;
 
     public League() {
@@ -39,5 +39,13 @@ public class League  {
 
     public int getId() {
         return this.id;
+    }
+
+    public List<Match> getMatches() {
+        return matches;
+    }
+
+    public void setMatches(List<Match> matches) {
+        this.matches = matches;
     }
 }

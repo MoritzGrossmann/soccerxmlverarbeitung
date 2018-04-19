@@ -2,40 +2,38 @@ package models;
 
 import javax.persistence.*;
 
-@Entity
+@Entity(name = "MatchResult")
+@Table(name = "matchResult")
 public class MatchResult {
 
     @Id
+    @Column(name = "id")
     private int id;
 
-    private int matchId;
-
+    @Column(name = "points_team_1")
     private int pointsTeam1;
 
+    @Column(name = "points_team_2")
     private int pointsTeam2;
 
+    @Column(name = "description")
     private String description;
 
+    @Column(name = "name")
     private String name;
 
+    @Column(name = "order_id")
     private int orderId;
 
+    @Column(name = "type_id")
     private int typeId;
 
-    @OneToMany(fetch = FetchType.LAZY, targetEntity = Match.class)
-    @JoinColumn(name = "id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "match_id")
     private Match match;
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public int getMatchId() {
-        return matchId;
-    }
-
-    public void setMatchId(int matchId) {
-        this.matchId = matchId;
     }
 
     public int getPointsTeam1() {

@@ -1,26 +1,23 @@
 package models;
 
-import database.GroupEntities;
-import database.Result;
-import database.WrongEntityTypeException;
-
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.util.List;
 
-@Entity
+@Entity(name = "Group")
+@Table(name = "group")
 public class Group {
 
     @Id
+    @Column(name = "id")
     private int id;
 
+    @Column(name = "name")
     private String name;
 
+    @Column(name = "order_id")
     private int orderId;
 
-    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Match.class)
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "group", cascade = CascadeType.ALL)
     private List<Match> matches;
 
     public Group() {

@@ -1,55 +1,59 @@
 package models;
 
-import database.MatchEntities;
-import database.Result;
-import database.WrongEntityTypeException;
-
 import javax.persistence.*;
 import java.sql.Date;
 import java.util.List;
 
-@Entity
+@Entity(name = "Match")
+@Table(name = "match")
 public class Match  {
 
     @Id
+    @Column(name = "id")
     private int id;
 
+    @Column(name = "last_update_times")
     private Date lastUpdateTime;
 
-    @OneToMany(fetch = FetchType.LAZY, targetEntity = League.class)
-    @JoinColumn(name = "id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "league_id")
     private League league;
 
-    @OneToMany(fetch = FetchType.LAZY, targetEntity = Match.class)
-    @JoinColumn(name = "id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "locaton_id")
     private Location location;
 
-    @OneToMany(fetch = FetchType.LAZY, targetEntity = Group.class)
-    @JoinColumn(name = "id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "group_id")
     private Group group;
 
+    @Column(name = "datetime")
     private Date dateTime;
 
+    @Column(name = "datetime_utc")
     private Date dateTimeUTC;
 
+    @Column(name = "finished")
     private boolean finished;
 
+    @Column(name = "number_of_viewers")
     private int numberOfViewers;
 
-    @OneToMany(fetch = FetchType.LAZY, targetEntity = Team.class)
-    @JoinColumn(name = "id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "team_1_id")
     private Team team1;
 
-    @OneToMany(fetch = FetchType.LAZY, targetEntity = Team.class)
-    @JoinColumn(name = "id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "team_2_id")
     private Team team2;
 
+    @Column(name = "timezone")
     private String timezone;
 
-    @ManyToOne(fetch = FetchType.LAZY, targetEntity = MatchResult.class)
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "match", cascade = CascadeType.ALL)
     private List<MatchResult> matchResults;
 
-    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Goal.class)
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "match", cascade = CascadeType.ALL)
     private List<Goal> goals;
 
 

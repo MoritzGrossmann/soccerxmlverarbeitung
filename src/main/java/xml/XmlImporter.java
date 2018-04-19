@@ -71,8 +71,6 @@ public class XmlImporter {
 
     public List<Match> readMatches() {
 
-        int i = 0;
-
         List<Match> matches = new ArrayList<>();
 
         try {
@@ -89,7 +87,7 @@ public class XmlImporter {
                 Element xmlGoals = xmlMatch.getChild("Goals", xmlMatch.getNamespace());
 
                 xmlGoals.getChildren("Goal", xmlGoals.getNamespace()).forEach(xmlGoal -> {
-                    goals.add(parseGoalXml(xmlGoal, match.getId()));
+                    goals.add(parseGoalXml(xmlGoal));
                 });
 
                 match.setGoals(goals);
@@ -99,8 +97,7 @@ public class XmlImporter {
                 Element xmlMatchresults = xmlMatch.getChild("MatchResults", xmlMatch.getNamespace());
 
                 xmlMatchresults.getChildren("MatchResult", xmlMatchresults.getNamespace()).forEach(xmlMatchResult -> {
-                    MatchResult result = parseMatchResultXml(xmlMatchResult, match.getId());
-                    result.setMatchId(match.getId());
+                    MatchResult result = parseMatchResultXml(xmlMatchResult);
                     matchResults.add(result);
                 });
 
@@ -163,25 +160,11 @@ public class XmlImporter {
 
                 Element xmlTeam1 = xmlMatch.getChild("Team1", xmlMatch.getNamespace());
 
-                Team team1 = new Team(
-                        Integer.parseInt(xmlTeam1.getChildText("TeamId", xmlTeam1.getNamespace())),
-                        xmlTeam1.getChildText("ShortName", xmlTeam1.getNamespace()),
-                        xmlTeam1.getChildText("TeamIconUrl", xmlTeam1.getNamespace()),
-                        xmlTeam1.getChildText("TeamName", xmlTeam1.getNamespace())
-                );
-
-                match.setTeam1(team1);
+                match.setTeam1(parseTeamXml(xmlTeam1));
 
                 Element xmlTeam2 = xmlMatch.getChild("Team2", xmlMatch.getNamespace());
 
-                Team team2 = new Team(
-                        Integer.parseInt(xmlTeam2.getChildText("TeamId", xmlTeam2.getNamespace())),
-                        xmlTeam2.getChildText("ShortName", xmlTeam2.getNamespace()),
-                        xmlTeam2.getChildText("TeamIconUrl", xmlTeam2.getNamespace()),
-                        xmlTeam2.getChildText("TeamName", xmlTeam2.getNamespace())
-                );
-
-                match.setTeam2(team2);
+                match.setTeam2(parseTeamXml(xmlTeam2));
 
                 Element xmlGroup = xmlMatch.getChild("Group", xmlMatch.getNamespace());
 
@@ -203,7 +186,16 @@ public class XmlImporter {
         return matches;
     }
 
-    private MatchResult parseMatchResultXml(Element xmlMatchResult, int matchId) {
+    private Team parseTeamXml(Element xmlTeam) {
+        Team team = new Team();
+        team.setId(Integer.parseInt(xmlTeam.getChildText("TeamId", xmlTeam.getNamespace())));
+        team.setShortName(xmlTeam.getChildText("ShortName", xmlTeam.getNamespace()));
+        team.setTeamIconUrl(xmlTeam.getChildText("TeamIconUrl", xmlTeam.getNamespace()));
+        team.setTeamName(xmlTeam.getChildText("TeamName", xmlTeam.getNamespace()));
+        return team;
+    }
+
+    private MatchResult parseMatchResultXml(Element xmlMatchResult) {
         MatchResult matchResult = new MatchResult();
         matchResult.setPointsTeam1(Integer.parseInt(xmlMatchResult.getChildText("PointsTeam1", xmlMatchResult.getNamespace())));
         matchResult.setPointsTeam2(Integer.parseInt(xmlMatchResult.getChildText("PointsTeam2", xmlMatchResult.getNamespace())));
@@ -212,11 +204,10 @@ public class XmlImporter {
         matchResult.setName(xmlMatchResult.getChildText("ResultName", xmlMatchResult.getNamespace()));
         matchResult.setOrderId(Integer.parseInt(xmlMatchResult.getChildText("ResultOrderID", xmlMatchResult.getNamespace())));
         matchResult.setTypeId(Integer.parseInt(xmlMatchResult.getChildText("ResultTypeID", xmlMatchResult.getNamespace())));
-        matchResult.setMatchId(matchId);
         return matchResult;
     }
 
-    private Goal parseGoalXml(Element xmlGoal, int matchId) {
+    private Goal parseGoalXml(Element xmlGoal) {
         Goal goal = new Goal();
         goal.setComment(xmlGoal.getChildText("Comment", xmlGoal.getNamespace()));
         goal.setGoalGetterId(Integer.parseInt(xmlGoal.getChildText("GoalGetterID", xmlGoal.getNamespace())));
@@ -234,7 +225,6 @@ public class XmlImporter {
 
         goal.setScoreTeam1(Integer.parseInt(xmlGoal.getChildText("ScoreTeam1", xmlGoal.getNamespace())));
         goal.setScoreTeam2(Integer.parseInt(xmlGoal.getChildText("ScoreTeam2", xmlGoal.getNamespace())));
-        goal.setMatchId(matchId);
         return goal;
     }
 

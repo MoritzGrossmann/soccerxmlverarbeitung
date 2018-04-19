@@ -2,34 +2,43 @@ package models;
 
 import javax.persistence.*;
 
-@Entity
+@Entity(name = "Goal")
+@Table(name="goal")
 public class Goal {
 
     @Id
+    @Column(name = "id")
     private int id;
 
+    @Column(name = "goalgetter_id")
     private int goalGetterId;
 
+    @Column(name = "goalgetter_name")
     private String goalGetterName;
 
-    private int matchId;
-
+    @Column(name = "overtime")
     private boolean overTime;
 
+    @Column(name = "own_goal")
     private boolean ownGoal;
 
+    @Column(name = "penalty")
     private boolean penalty;
 
+    @Column(name = "minute")
     private int minute;
 
+    @Column(name = "score_team_1")
     private int scoreTeam1;
 
+    @Column(name = "score_team_2")
     private int scoreTeam2;
 
+    @Column(name = "comment")
     private String comment;
 
-    @OneToMany(fetch = FetchType.LAZY, targetEntity = Match.class)
-    @JoinColumn(name = "id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "match_id")
     private Match match;
 
     public Goal() {
@@ -40,7 +49,6 @@ public class Goal {
         this.id = id;
         this.goalGetterId = goalGetterId;
         this.goalGetterName = goalGetterName;
-        this.matchId = matchId;
         this.overTime = overTime;
         this.ownGoal = ownGoal;
         this.penalty = penalty;
@@ -67,14 +75,6 @@ public class Goal {
 
     public void setGoalGetterName(String goalGetterName) {
         this.goalGetterName = goalGetterName;
-    }
-
-    public int getMatchId() {
-        return matchId;
-    }
-
-    public void setMatchId(int matchId) {
-        this.matchId = matchId;
     }
 
     public boolean isOverTime() {

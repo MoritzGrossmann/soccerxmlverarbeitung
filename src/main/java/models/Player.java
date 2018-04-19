@@ -1,32 +1,53 @@
 package models;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
 
-@Entity
+@Entity(name = "Player")
+@Table(name = "player")
 public class Player {
 
     @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int id;
+
+    @Column(name = "team_id")
     private int teamId;
 
+    @Column(name = "trikot_nr")
     private int trikotNr;
 
+    @Column(name = "name")
     private String name;
 
+    @Column(name = "birth_date")
     private Date birthDate;
 
+    @Column(name = "minutes")
     private int minutes;
 
+    @Column(name = "goals")
     private int goals;
 
+    @Column(name = "yellow_cards")
     private int yellowCards;
 
+    @Column(name = "yellow_red_cards")
     private int yellowRedCards;
 
+    @Column(name = "red_cards")
     private int redCards;
 
     public Player() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getTeamId() {

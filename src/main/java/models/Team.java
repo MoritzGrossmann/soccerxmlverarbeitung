@@ -1,24 +1,26 @@
 package models;
 
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.util.List;
 
-@Entity
+@Entity(name = "Team")
+@Table(name = "team")
 public class Team  {
 
     @Id
+    @Column(name = "id")
     private int id;
 
+    @Column(name = "short_name")
     private String shortName;
 
+    @Column(name = "icon_url")
     private String teamIconUrl;
 
+    @Column(name = "name")
     private String teamName;
 
-    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Match.class)
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "team", cascade = CascadeType.ALL)
     private List<Match> matches;
 
     public Team(int id, String shortName, String teamIconUrl, String teamName) {
@@ -26,6 +28,10 @@ public class Team  {
         this.shortName = shortName;
         this.teamIconUrl = teamIconUrl;
         this.teamName = teamName;
+    }
+
+    public Team() {
+
     }
 
     public int getId() {

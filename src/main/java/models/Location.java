@@ -1,22 +1,23 @@
 package models;
 
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.util.List;
 
-@Entity
+@Entity(name = "Loaction")
+@Table(name = "location")
 public class Location {
 
     @Id
+    @Column(name = "id")
     private int id;
 
+    @Column(name = "city")
     private String city;
 
+    @Column(name = "stadium")
     private String stadium;
 
-    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Match.class)
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "location", cascade = CascadeType.ALL)
     private List<Match> matches;
 
     public Location(int id, String city, String stadium) {
